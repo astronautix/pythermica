@@ -92,13 +92,14 @@ class Thermica():
         return value
 
     def return_time_temperature(self):
-        """the time vector is stor in all of the h5 files"""
+        """the time vector is stor in all of the h5 files, in Hours from the start of the simulation"""
 
         solarfluxname = self.get_temperature_file()
 
         with hp.File(solarfluxname, "r") as h5file:
             value = h5file["Time"]["Frequency 1"][()]
-
+        value -= value[0]
+        value *= 24
         return value
 
     def return_datetime_temperature(self):
