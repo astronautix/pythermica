@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="MISSION" SAVEDATE="1606927112" SYSTEMA_VERSION="4.8.3P1">
+    <DATA_STRUCTURE NAME="ionsat_deployed_3.1.sysmis" REFSET_ID="{9de7ca44-aff9-49b8-bb24-2395553bbec4}">
+        <DATA_NODE TYPE="MISSION" REFOBJ_ID="2" NAME="Mission">
+            <DATA_NODE TYPE="GENERIC_NODE" REFOBJ_ID="3" NAME="Sequences time items"/>
+            <DATA_NODE TYPE="GENERIC_NODE" REFOBJ_ID="4" NAME="Computation time items">
+                <DATA_NODE TYPE="CUSTOM_EVTSETRULE_NODE" REFOBJ_ID="6" NAME="Computation event rule (1)">
+                    <NODE_ATTRIBUTE TYPE="EVTSETRULE_ATT" NAME="EVTSETRULE">
+                        <ELEM TYPE="CUSTOMEVTSETRULE_ELEM">
+                            <ELEM TYPE="TIMEFREQ_WRAPPER">
+                                <ELEM TYPE="ANOMALYSTEP_FREQ">
+                                    <ELEM TYPE="VALUE" NAME="Anomaly step" VALUE="15"/>
+                                    <ELEM TYPE="BOOLEAN" NAME="Add a last computation point at the interval end" VALUE="true"/>
+                                </ELEM>
+                            </ELEM>
+                            <ELEM TYPE="TIMEZONE_WRAPPER">
+                                <ELEM TYPE="WHOLEMISSION_TIMEZONE"/>
+                            </ELEM>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="CUSTOM_EVTSETRULE_NODE" REFOBJ_ID="7" NAME="Computation event rule (2)">
+                    <NODE_ATTRIBUTE TYPE="EVTSETRULE_ATT" NAME="EVTSETRULE">
+                        <ELEM TYPE="CUSTOMEVTSETRULE_ELEM">
+                            <ELEM TYPE="TIMEFREQ_WRAPPER">
+                                <ELEM TYPE="ECLIPSE_REL_FREQ">
+                                    <ELEM TYPE="STRING" NAME="Selected intervals" STR="Eclipse &amp; penumbra"/>
+                                    <ELEM TYPE="STRING" NAME="Create start or end of selected intervals" STR="Start &amp; end"/>
+                                </ELEM>
+                            </ELEM>
+                            <ELEM TYPE="TIMEZONE_WRAPPER">
+                                <ELEM TYPE="WHOLEMISSION_TIMEZONE"/>
+                            </ELEM>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="GENERIC_NODE" REFOBJ_ID="5" NAME="Custom time items"/>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="8" NAME="Chassis bottom center">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="9" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="7" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="3" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="10" NAME="Chassis bottom left">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="11" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="9" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="8" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="12" NAME="Chassis bottom right">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="13" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="11" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="10" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="14" NAME="Chassis side front">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="15" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="13" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="12" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="16" NAME="Chassis side back left">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="17" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="15" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="14" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="18" NAME="Chassis side back right">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="19" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="17" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="16" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="20" NAME="Chassis side left">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="21" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="19" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="18" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="22" NAME="Chassis side right">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="23" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="21" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="20" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="24" NAME="Chassis top">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="25" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="23" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="22" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="26" NAME="Chassis propeller support left">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="27" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="25" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="24" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="28" NAME="Chassis propeller support right">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="29" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="27" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="26" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="424" NAME="Solar panel center">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="425" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="29" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="28" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="596" NAME="Solar panel left">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="597" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="31" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="30" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="598" NAME="Solar panel right">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="599" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="33" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="32" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="600" NAME="Propeller side front">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="601" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="35" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="34" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="602" NAME="Propeller side left">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="603" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="37" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="36" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="604" NAME="Propeller side right">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="605" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="39" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="38" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="606" NAME="Propeller top">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="607" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="41" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="40" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="609" NAME="Propeller bottom">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="610" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="44" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="43" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="611" NAME="Propeller side back">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="612" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="46" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="45" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="617" NAME="Band S front">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1315" NAME="New Disc (1)">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="127" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="49" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="621" NAME="Band S bottom">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1316" NAME="New Disc (1)">
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="128" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="51" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="1768" NAME="Batteries">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1770" NAME="Battery 1">
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1776" NAME="Face 1">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="111" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1775" NAME="Face 2">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="112" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1774" NAME="Face 3">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="113" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1773" NAME="Face 4">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="114" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1772" NAME="Face 5">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="115" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1771" NAME="Face 6">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="116" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="110" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1777" NAME="Battery 2">
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1783" NAME="Face 1">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="118" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1782" NAME="Face 2">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="119" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1781" NAME="Face 3">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="120" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1780" NAME="Face 4">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="121" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1779" NAME="Face 5">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="122" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1778" NAME="Face 6">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="123" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="117" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="130" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="1784" NAME="Transponder (1)">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1814" NAME="Transponder">
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1820" NAME="Face 1">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="97" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1819" NAME="Face 2">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="98" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1818" NAME="Face 3">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="99" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1817" NAME="Face 4">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="100" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1816" NAME="Face 5">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="101" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1815" NAME="Face 6">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="102" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="96" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="132" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="1799" NAME="Printed Circuits">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1821" NAME="Printed Circuits">
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1827" NAME="Face 1">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="104" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1826" NAME="Face 2">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="105" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1825" NAME="Face 3">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="106" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1824" NAME="Face 4">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="107" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1823" NAME="Face 5">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="108" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1822" NAME="Face 6">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="109" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="103" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="147" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <DATA_NODE TYPE="MISSION_OBJECT" REFOBJ_ID="1828" NAME="Powercard P60">
+                <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1836" NAME="Powercard P60">
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1842" NAME="Face 1">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="90" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1841" NAME="Face 2">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="91" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1840" NAME="Face 3">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="92" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1839" NAME="Face 4">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="93" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1838" NAME="Face 5">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="94" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="MISSION_SHAPE" REFOBJ_ID="1837" NAME="Face 6">
+                        <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="95" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="89" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="162" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+            </DATA_NODE>
+            <NODE_ATTRIBUTE TYPE="MODELREF_ATT" NAME="MODEL">
+                <ELEM FILE_PATH="/home/tavant/Data/OneDrive/IonSat X18/Plateforme/Thermique/Travail X18/Thermal analysis/ionsat_deployed_ver3.1/ionsat_deployed_3.1.sysmdl" TYPE="FILE_DESCRIPTION" FILE_FORMAT="sysmdl" NAME="MODEL" FILE_RELATIVE_PATH="./ionsat_deployed_3.1.sysmdl"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="MESHINGREF_ATT" NAME="MESHING">
+                <ELEM FILE_PATH="/home/tavant/Data/OneDrive/IonSat X18/Plateforme/Thermique/Travail X18/Thermal analysis/ionsat_deployed_ver3.1/ionsat_deployed_3.1.sysmsh" TYPE="FILE_DESCRIPTION" FILE_FORMAT="sysmsh" NAME="MESHING" FILE_RELATIVE_PATH="./ionsat_deployed_3.1.sysmsh"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="TRAJREF_ATT" NAME="TRAJECTORY">
+                <ELEM FILE_PATH="/home/tavant/Data/OneDrive/IonSat X18/Plateforme/Thermique/Travail X18/Thermal analysis/ionsat_deployed_ver3.1/ionsat_deployed_3.1.systrj" TYPE="FILE_DESCRIPTION" FILE_FORMAT="systrj" NAME="TRAJECTORY" FILE_RELATIVE_PATH="./ionsat_deployed_3.1.systrj"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="KINEREF_ATT" NAME="KINEMATICS">
+                <ELEM FILE_PATH="/home/tavant/Data/OneDrive/IonSat X18/Plateforme/Thermique/Travail X18/Thermal analysis/ionsat_deployed_ver3.1/ionsat_deployed_3.1.syskin" TYPE="FILE_DESCRIPTION" FILE_FORMAT="syskin" NAME="KINEMATICS" FILE_RELATIVE_PATH="./ionsat_deployed_3.1.syskin"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="KINEBODYLINKATT" NAME="KINEMATICS LINK">
+                <ELEM TYPE="DNLINK" REFOBJ_ID="4" REFSET_ID="{8e6b7ead-13eb-4cff-bc4b-5b0bdaffc9a9}" SELF="false"/>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="REF_ATT" REFOBJ_ID="2" NAME="REF" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}"/>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

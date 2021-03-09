@@ -1,0 +1,233 @@
+> Execution : /home/tavant/bin/thermica/Systema-4.8.3P1/applications//Thermisol-4.8.3P1/SkeletonLNX -param Skeleton.sysprm -nwk ionsat_deployed_3.1.nod.nwk -gl ionsat_deployed_3.1.gl.nwk -gr ionsat_deployed_3.1.gr.nwk -fp ionsat_deployed_3.1.pf.nwk -fs ionsat_deployed_3.1.sf.nwk -dck ionsat_deployed_3.1.dck
+>  
+>  
+>  **************************
+> Skeleton Generation
+>  **************************
+> THERMISOL 4.8.3P1 - 64 bits
+AIRBUS Defence and Space SAS - 2019 - All rights reserved
+Information contact : Systema Support
+Telephone : +33 (0)5 31 96 80 00
+Email : engineering.software@airbus.com
+
+About license :
+Valid local license found, expires at 31/12/2021
+(file: /home/tavant/bin/thermica/Systema-4.8.3P1/licenses/Polytech_Marmuse4.moslf).
+
+> State  1 : Skeleton generation
+> State  1 : Skeleton expansion
+>    using file - ionsat_deployed_3.1.nod.nwk
+>    using file - ionsat_deployed_3.1.gl.nwk
+>    using file - ionsat_deployed_3.1.gr.nwk
+>    using file - ionsat_deployed_3.1.pf.nwk
+>    using file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $INFOS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.sf.nwk
+>       -> block found
+> Entering new block   $GLOBAL
+> Entering new block   $LOCALS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $VARIABLES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $ARRAYS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $TABLES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $EVENTS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $MODEL
+> Opening model  ionsat_deployed_3.1
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $ENTITIES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $NODES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $EDGES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $CONDUCTORS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $LOCALS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $EVENTS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $ARRAYS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.sf.nwk
+>       -> block found
+> Entering new block   $TABLES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $VARIABLES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $CONTROL
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.sf.nwk
+>       -> block found
+> Entering new block   $SUBROUTINES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.sf.nwk
+>       -> block found
+> Entering new block   $INITIAL
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.sf.nwk
+>       -> block found
+> Entering new block   $VTEMPERATURE
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $VTIME
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.sf.nwk
+>       -> block found
+> Entering new block   $VRESULT
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $OUTPUTS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $EXECUTION
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Closing model  ionsat_deployed_3.1
+>  
+Execution of computation executable "Thermisol - Skeleton" completed.
+> Execution completed on Wed Dec  2 17:35:20 2020
+
+>  **************************
+>  
+> Execution : /home/tavant/bin/thermica/Systema-4.8.3P1/applications//Thermisol-4.8.3P1/SolverLNX -param Solver.sysprm -dck ionsat_deployed_3.1.dck -log ionsat_deployed_3.1.temp.log -csv ionsat_deployed_3.1.temp.csv -out ionsat_deployed_3.1.temp.out -hdf ionsat_deployed_3.1.temp.h5
+>  
+>  
+>  **************************
+> Temperature Solver Execution
+>  **************************
+> State  1 : Creation of user fortran code
+> "/home/tavant/bin/thermica/Systema-4.8.3P1/applications//Thermisol-4.8.3P1/PreproLNX" "ionsat_deployed_3.1.dck" "ionsat_deployed_3.1.temp.out" "ionsat_deployed_3.1.temp.h5" "ionsat_deployed_3.1.temp.csv" "ionsat_deployed_3.1.temp.log" "-" 0
+> State  2 : Compilation of user code
+> gfortran -m64 -fno-second-underscore -fno-automatic -w -c "zz_ionsat_deployed_3.1_for.f"
+> State  3 : Link with solver library
+> gfortran -m64 -fno-second-underscore -fno-automatic -w -o "zz_ionsat_deployed_3.1_prg_LNX" "zz_ionsat_deployed_3.1_for.o" "/home/tavant/bin/thermica/Systema-4.8.3P1/applications//Thermisol-4.8.3P1/../Libsolver-4.8.3P1/SolverLib-gfortran-LNX.a"  -lm "/home/tavant/bin/thermica/Systema-4.8.3P1/applications//Thermisol-4.8.3P1/../Libsolver-4.8.3P1/PowerDummyLib-gfortran-LNX.a"
+> State  4 : Execution of solution program
+> ./zz_ionsat_deployed_3.1_prg_LNX
+> THERMISOL 4.8.3P1 - 64 bits
+AIRBUS Defence and Space SAS - 2019 - All rights reserved
+Information contact : Systema Support
+Telephone : +33 (0)5 31 96 80 00
+Email : engineering.software@airbus.com
+
+About license :
+Valid local license found, expires at 31/12/2021
+(file: /home/tavant/bin/thermica/Systema-4.8.3P1/licenses/Polytech_Marmuse4.moslf).
+
+>  
+> Execution completed on Wed Dec  2 17:35:26 2020
+
+>  **************************
+Execution of computation executable "Thermisol - Solver" completed.
+>  

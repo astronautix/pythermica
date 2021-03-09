@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="KINEMATICS" SAVEDATE="1584744378" SYSTEMA_VERSION="4.8.3">
+    <DATA_STRUCTURE NAME="ionsat_deployed_3.0.syskin" REFSET_ID="{8e6b7ead-13eb-4cff-bc4b-5b0bdaffc9a9}">
+        <DATA_NODE TYPE="KINEMATICS" REFOBJ_ID="2" NAME="Kinematics">
+            <DATA_NODE TYPE="KINEBODY" REFOBJ_ID="3" NAME="New Ball joint (3 dof)">
+                <DATA_NODE TYPE="KINEBODY" REFOBJ_ID="4" NAME="New Pivot (1 dof)">
+                    <NODE_ATTRIBUTE TYPE="CONNECTION_ATT" NAME="KINEMATICS CONNECTION">
+                        <ELEM CONNECTIONTYPE="Pivot (1 dof)" TYPE="KINE_CONNECTION_ELEM" NAME="Pivot (1 dof)">
+                            <ELEM TYPE="DEGREE_OF_FREEDOM" NAME="First rotation">
+                                <ELEM TYPE="STRING" NAME="Axis" STR="X"/>
+                                <ELEM TYPE="BOOLEAN" NAME="Restriction" VALUE="false"/>
+                                <ELEM TYPE="VALUE" NAME="Min" VALUE="0"/>
+                                <ELEM TYPE="VALUE" NAME="Max" VALUE="360"/>
+                            </ELEM>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="LAW_ATT" NAME="POINTING LAW_%P_Default">
+                        <ELEM LAWTYPE="Sun" TYPE="KINE_LAW_ELEM" NAME="Sun">
+                            <ELEM X="0" Y="0" Z="1" TYPE="VECTOR" NAME="Pointing vector"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="CONNECTION_ATT" NAME="KINEMATICS CONNECTION">
+                    <ELEM CONNECTIONTYPE="Ball joint (3 dof)" TYPE="KINE_CONNECTION_ELEM" NAME="Ball joint (3 dof)">
+                        <ELEM TYPE="DEGREE_OF_FREEDOM" NAME="First rotation">
+                            <ELEM TYPE="STRING" NAME="Axis" STR="X"/>
+                            <ELEM TYPE="BOOLEAN" NAME="Restriction" VALUE="false"/>
+                            <ELEM TYPE="VALUE" NAME="Min" VALUE="0"/>
+                            <ELEM TYPE="VALUE" NAME="Max" VALUE="360"/>
+                        </ELEM>
+                        <ELEM TYPE="DEGREE_OF_FREEDOM" NAME="Second rotation">
+                            <ELEM TYPE="STRING" NAME="Axis" STR="Y"/>
+                            <ELEM TYPE="BOOLEAN" NAME="Restriction" VALUE="false"/>
+                            <ELEM TYPE="VALUE" NAME="Min" VALUE="0"/>
+                            <ELEM TYPE="VALUE" NAME="Max" VALUE="360"/>
+                        </ELEM>
+                        <ELEM TYPE="DEGREE_OF_FREEDOM" NAME="Third rotation">
+                            <ELEM TYPE="STRING" NAME="Axis" STR="Z"/>
+                            <ELEM TYPE="BOOLEAN" NAME="Restriction" VALUE="false"/>
+                            <ELEM TYPE="VALUE" NAME="Min" VALUE="0"/>
+                            <ELEM TYPE="VALUE" NAME="Max" VALUE="360"/>
+                        </ELEM>
+                    </ELEM>
+                </NODE_ATTRIBUTE>
+                <NODE_ATTRIBUTE TYPE="LAW_ATT" NAME="POINTING LAW_%P_Default">
+                    <ELEM LAWTYPE="Orbit velocity vector" TYPE="KINE_LAW_ELEM" NAME="Orbit velocity vector">
+                        <ELEM X="1" Y="0" Z="0" TYPE="VECTOR" NAME="Pointing vector"/>
+                    </ELEM>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <NODE_ATTRIBUTE TYPE="PHASES" NAME="PHASES">
+                <ELEM DEFAULT="Default phase" TYPE="PHASES">
+                    <ELEM TYPE="STRING" NAME="Default phase" STR="Default"/>
+                </ELEM>
+            </NODE_ATTRIBUTE>
+            <NODE_ATTRIBUTE TYPE="LAW_ATT" NAME="POINTING LAW_%P_Default">
+                <ELEM LAWTYPE="2 pointing vectors laws" TYPE="KINE_LAW_ELEM" NAME="Multiple laws">
+                    <ELEM LAWTYPE="Orbit planet reference" TYPE="KINE_LAW_ELEM" NAME="Orbit planet reference">
+                        <ELEM X="1" Y="0" Z="0" TYPE="VECTOR" NAME="Pointing vector"/>
+                        <ELEM TYPE="STRING" NAME="OrbitCenter or anti-OrbitCenter" STR="Orbit planet reference"/>
+                    </ELEM>
+                    <ELEM LAWTYPE="Orbit velocity vector" TYPE="KINE_LAW_ELEM" NAME="Orbit velocity vector">
+                        <ELEM X="0" Y="1" Z="0" TYPE="VECTOR" NAME="Pointing vector"/>
+                    </ELEM>
+                </ELEM>
+            </NODE_ATTRIBUTE>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

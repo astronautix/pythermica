@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="PROCESS_PARAMETERS" SAVEDATE="1606926922" SYSTEMA_VERSION="4.8.3P1">
+    <PROCESS_PARAMETERS PROCESS_NAME="Solver" APP_NAME="Thermisol">
+        <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+            <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS">
+                <ELEM TYPE="PROC_CATEGORY" ID="Run">
+                    <ELEM TYPE="STRING" ID="task" STR="All"/>
+                    <ELEM TYPE="STRING" ID="implicit_none" STR="No"/>
+                </ELEM>
+            </ELEM>
+        </NODE_ATTRIBUTE>
+        <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+            <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS"/>
+        </NODE_ATTRIBUTE>
+    </PROCESS_PARAMETERS>
+</SYSML>

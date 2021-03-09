@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="PROCESS_PARAMETERS" SAVEDATE="1586444681" SYSTEMA_VERSION="4.8.3">
+    <PROCESS_PARAMETERS PROCESS_NAME="Nodal_Description" APP_NAME="Thermica">
+        <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+            <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS">
+                <ELEM TYPE="PROC_CATEGORY" ID="Outputs">
+                    <ELEM TYPE="STRING" ID="FileGeneration" STR="SOL"/>
+                    <ELEM TYPE="STRING" ID="ExportFXYZ" STR="No"/>
+                    <ELEM TYPE="STRING" ID="ExportNXYZ" STR="No"/>
+                    <ELEM TYPE="STRING" ID="ExportGeomArea" STR="No"/>
+                    <ELEM TYPE="STRING" ID="ExportVolum" STR="Yes"/>
+                    <ELEM TYPE="INTEGER" ID="TransverseCouplingStartNumber" VALUE="900000"/>
+                </ELEM>
+            </ELEM>
+        </NODE_ATTRIBUTE>
+        <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+            <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS">
+                <ELEM TYPE="PROC_CATEGORY" ID="Sun Constant">
+                    <ELEM TYPE="STRING" ID="SunCstMode" STR="Automatic"/>
+                    <ELEM TYPE="VALUE" ID="SunCstValue" VALUE="1400"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Wavelength Dependency">
+                    <ELEM TYPE="INTEGER" ID="NBand" VALUE="1"/>
+                    <ELEM TYPE="VALUE" ID="LowerBound" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound1" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound2" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound3" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound4" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound5" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound6" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound7" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound8" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound9" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="UpperBound" VALUE="10000"/>
+                </ELEM>
+            </ELEM>
+        </NODE_ATTRIBUTE>
+    </PROCESS_PARAMETERS>
+</SYSML>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="PROCESS_PARAMETERS" SAVEDATE="1606924949" SYSTEMA_VERSION="4.8.3P1">
+    <PROCESS_PARAMETERS PROCESS_NAME="Radiation" APP_NAME="Thermica">
+        <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+            <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS">
+                <ELEM TYPE="PROC_CATEGORY" ID="Accuracy Control">
+                    <ELEM TYPE="STRING" ID="AccuracyControl" STR="No"/>
+                    <ELEM TYPE="INTEGER" ID="LoopMax" VALUE="4"/>
+                    <ELEM TYPE="VALUE" ID="RayMax" VALUE="4"/>
+                    <ELEM TYPE="VALUE" ID="AccSymErr" VALUE="2"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Ray tracing">
+                    <ELEM TYPE="STRING" ID="Method" STR="Quasi Monte-Carlo"/>
+                    <ELEM TYPE="INTEGER" ID="RandomSeed" VALUE="876743"/>
+                    <ELEM TYPE="STRING" ID="RandomSeedReinit" STR="No"/>
+                    <ELEM TYPE="INTEGER" ID="SpaceDivisionNb" VALUE="20"/>
+                    <ELEM TYPE="VALUE" ID="RayThreshold" VALUE="1"/>
+                    <ELEM TYPE="INTEGER" ID="NbRayBounces" VALUE="100"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Critical">
+                    <ELEM TYPE="STRING" ID="C_RayBuildingMethod" STR="Per node"/>
+                    <ELEM TYPE="INTEGER" ID="C_RayNumberByNode" VALUE="50000"/>
+                    <ELEM TYPE="INTEGER" ID="C_RayNumberByShape" VALUE="50000"/>
+                    <ELEM TYPE="VALUE" ID="C_Density" VALUE="50000"/>
+                    <ELEM TYPE="INTEGER" ID="C_MinNbRaysByShape" VALUE="10000"/>
+                    <ELEM TYPE="INTEGER" ID="C_MaxNbRaysByShape" VALUE="100000"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Normal">
+                    <ELEM TYPE="STRING" ID="RayBuildingMethod" STR="Per node"/>
+                    <ELEM TYPE="INTEGER" ID="RayNumberByNode" VALUE="10000"/>
+                    <ELEM TYPE="INTEGER" ID="RayNumberByShape" VALUE="10000"/>
+                    <ELEM TYPE="VALUE" ID="Density" VALUE="10000"/>
+                    <ELEM TYPE="INTEGER" ID="MinNbRaysByShape" VALUE="1000"/>
+                    <ELEM TYPE="INTEGER" ID="MaxNbRaysByShape" VALUE="50000"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Low">
+                    <ELEM TYPE="STRING" ID="L_RayBuildingMethod" STR="Per node"/>
+                    <ELEM TYPE="INTEGER" ID="L_RayNumberByNode" VALUE="1000"/>
+                    <ELEM TYPE="INTEGER" ID="L_RayNumberByShape" VALUE="1000"/>
+                    <ELEM TYPE="VALUE" ID="L_Density" VALUE="5000"/>
+                    <ELEM TYPE="INTEGER" ID="L_MinNbRaysByShape" VALUE="500"/>
+                    <ELEM TYPE="INTEGER" ID="L_MaxNbRaysByShape" VALUE="10000"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="REF Computation">
+                    <ELEM TYPE="INTEGER" ID="Enclosure" VALUE="-1"/>
+                    <ELEM TYPE="STRING" ID="SpaceCouplings" STR="Yes"/>
+                    <ELEM TYPE="VALUE" ID="RefReciprocalFilter" VALUE="0.01"/>
+                    <ELEM TYPE="VALUE" ID="RefTotalFilter" VALUE="1"/>
+                    <ELEM TYPE="VALUE" ID="TimeVariationFilter" VALUE="5"/>
+                    <ELEM TYPE="VALUE" ID="WavelengthVariationFilter" VALUE="5"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Outputs">
+                    <ELEM TYPE="STRING" ID="FileGeneration" STR="SOL"/>
+                    <ELEM TYPE="INTEGER" ID="RadiativeCouplingStartNumber" VALUE="1000000"/>
+                    <ELEM TYPE="VALUE" ID="RayDisplayRatio" VALUE="2"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Listing">
+                    <ELEM TYPE="VALUE" ID="GebL1" VALUE="10"/>
+                    <ELEM TYPE="VALUE" ID="GebL2" VALUE="5"/>
+                    <ELEM TYPE="VALUE" ID="GebL3" VALUE="1"/>
+                    <ELEM TYPE="STRING" ID="ImpingSummary" STR="Yes"/>
+                    <ELEM TYPE="VALUE" ID="ImpingL1" VALUE="50"/>
+                    <ELEM TYPE="VALUE" ID="ImpingL2" VALUE="25"/>
+                    <ELEM TYPE="STRING" ID="SpaceSummary" STR="Yes"/>
+                    <ELEM TYPE="VALUE" ID="SpaceL1" VALUE="5"/>
+                </ELEM>
+            </ELEM>
+        </NODE_ATTRIBUTE>
+        <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+            <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS">
+                <ELEM TYPE="PROC_CATEGORY" ID="Sun Constant">
+                    <ELEM TYPE="STRING" ID="SunCstMode" STR="Automatic"/>
+                    <ELEM TYPE="VALUE" ID="SunCstValue" VALUE="1400"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Wavelength Dependency">
+                    <ELEM TYPE="INTEGER" ID="NBand" VALUE="1"/>
+                    <ELEM TYPE="VALUE" ID="LowerBound" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound1" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound2" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound3" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound4" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound5" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound6" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound7" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound8" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="Bound9" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="UpperBound" VALUE="10000"/>
+                </ELEM>
+            </ELEM>
+        </NODE_ATTRIBUTE>
+    </PROCESS_PARAMETERS>
+</SYSML>

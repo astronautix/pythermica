@@ -1,0 +1,1100 @@
+Generation of mission files.
+Mission files generated.
+> Execution : C:/Program Files/Systema-4.8.3/applications//Thermica-4.8.3/RadiationWIN.exe -param Radiation.sysprm -mission ionsat_deployed_3.1.sysset -h5 ionsat_deployed_3.1.rad.h5 -box ionsat_deployed_3.1.box.h5 -log ionsat_deployed_3.1.rad.log -gb ionsat_deployed_3.1.gb.txt -gr ionsat_deployed_3.1.gr.nwk
+>  
+>  
+>  **************************
+> Radiation Computation
+>  **************************
+> THERMICA 4.8.3 - 64 bits
+AIRBUS Defence and Space SAS - 2019 - All rights reserved
+Information contact : 
+Telephone : +33 (0)5 31 96 80 00
+Email : engineering.software@airbus.com
+
+About license :
+Valid local license found, expires at 31/08/2020
+(file: C:/Program Files/Systema-4.8.3/licenses\Polytech_Marmuse.moslf).
+
+>   - Number of active threads : 8 ( / 8 available)
+
+> State  1 : Model Initialisation
+> State  2 : Thermal Data Loading
+> State  3 : Mission Data Loading
+> State  4 : Ray-Tracing Initialisation
+> State  5 : REF ray-tracing
+> State  6 : Symmetrization of Matrix
+> State  7 : Radiation Check-list generation
+> State  8 : Network Output Generation
+Execution of computation executable "Thermica - Radiation" completed.
+>  
+> Execution completed on Thu Apr 09 17:00:22 2020
+
+>  **************************
+>  
+> Execution : C:/Program Files/Systema-4.8.3/applications//Thermica-4.8.3/PlanetFluxesWIN.exe -param Planet_Fluxes.sysprm -mission ionsat_deployed_3.1.sysset -refh5 ionsat_deployed_3.1.box.h5 -hdf5 ionsat_deployed_3.1.pf.h5 -log ionsat_deployed_3.1.pf.log -fap ionsat_deployed_3.1.pf.nwk
+>  
+>  
+>  **************************
+> Planets Fluxes Computation
+>  **************************
+> THERMICA 4.8.3 - 64 bits
+AIRBUS Defence and Space SAS - 2019 - All rights reserved
+Information contact : 
+Telephone : +33 (0)5 31 96 80 00
+Email : engineering.software@airbus.com
+
+About license :
+Valid local license found, expires at 31/08/2020
+(file: C:/Program Files/Systema-4.8.3/licenses\Polytech_Marmuse.moslf).
+
+> State  1 : Model Initialisation
+> State  2 : Thermal Data Loading
+> State  3 : Mission Data Loading
+> State  4 : Planetes Fluxes Computation
+> Time position 0  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 1  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 2  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 3  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 4  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 5  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 6  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 7  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 8  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 9  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 10  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 11  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 12  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 13  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 14  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 15  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 16  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 17  -  Sun constant on planet Earth : 1418.1 W/m2
+> Time position 18  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 19  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 20  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 21  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 22  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 23  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 24  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 25  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 26  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 27  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 28  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 29  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 30  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 31  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 32  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 33  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 34  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 35  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 36  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 37  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 38  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 39  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 40  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 41  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 42  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 43  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 44  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 45  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 46  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 47  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 48  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 49  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 50  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 51  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 52  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 53  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 54  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 55  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 56  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 57  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 58  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 59  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 60  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 61  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 62  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 63  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 64  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 65  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 66  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 67  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 68  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 69  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 70  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 71  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 72  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 73  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 74  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 75  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 76  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 77  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 78  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 79  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 80  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 81  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 82  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 83  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 84  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 85  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 86  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 87  -  Sun constant on planet Earth : 1418.11 W/m2
+> Time position 88  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 89  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 90  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 91  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 92  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 93  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 94  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 95  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 96  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 97  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 98  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 99  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 100  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 101  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 102  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 103  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 104  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 105  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 106  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 107  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 108  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 109  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 110  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 111  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 112  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 113  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 114  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 115  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 116  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 117  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 118  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 119  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 120  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 121  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 122  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 123  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 124  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 125  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 126  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 127  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 128  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 129  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 130  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 131  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 132  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 133  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 134  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 135  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 136  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 137  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 138  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 139  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 140  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 141  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 142  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 143  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 144  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 145  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 146  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 147  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 148  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 149  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 150  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 151  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 152  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 153  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 154  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 155  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 156  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 157  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 158  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 159  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 160  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 161  -  Sun constant on planet Earth : 1418.12 W/m2
+> Time position 162  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 163  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 164  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 165  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 166  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 167  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 168  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 169  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 170  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 171  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 172  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 173  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 174  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 175  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 176  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 177  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 178  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 179  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 180  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 181  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 182  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 183  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 184  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 185  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 186  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 187  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 188  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 189  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 190  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 191  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 192  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 193  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 194  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 195  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 196  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 197  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 198  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 199  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 200  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 201  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 202  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 203  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 204  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 205  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 206  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 207  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 208  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 209  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 210  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 211  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 212  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 213  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 214  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 215  -  Sun constant on planet Earth : 1418.13 W/m2
+> Time position 216  -  Sun constant on planet Earth : 1418.13 W/m2
+> State  5 : Network Outputs Generation
+Execution of computation executable "Thermica - Planet_Fluxes" completed.
+>  
+> Execution completed on Thu Apr 09 17:01:58 2020
+
+>  **************************
+>  
+> Execution : C:/Program Files/Systema-4.8.3/applications//Thermica-4.8.3/SolarFluxWIN.exe -param Solar_Flux.sysprm -mission ionsat_deployed_3.1.sysset -refh5 ionsat_deployed_3.1.box.h5 -hdf5 ionsat_deployed_3.1.sf.h5 -log ionsat_deployed_3.1.sf.log -fas ionsat_deployed_3.1.sf.nwk
+>  
+>  
+>  **************************
+> Solar Flux Computation
+>  **************************
+> THERMICA 4.8.3 - 64 bits
+AIRBUS Defence and Space SAS - 2019 - All rights reserved
+Information contact : 
+Telephone : +33 (0)5 31 96 80 00
+Email : engineering.software@airbus.com
+
+About license :
+Valid local license found, expires at 31/08/2020
+(file: C:/Program Files/Systema-4.8.3/licenses\Polytech_Marmuse.moslf).
+
+>   - Number of active threads : 8 ( / 8 available)
+
+> State  1 : Model Initialisation
+> State  2 : Thermal Data Loading
+> State  3 : Mission Data Loading
+> State  4 : Ray-Tracing Initialisation
+> State  5 : Sun ray-tracing
+> Time position 0  -  Into eclipse
+> Time position 1  -  Into eclipse
+> Time position 2  -  Into eclipse
+> Time position 3  -  Into eclipse
+> Time position 4  -  Into eclipse
+> Time position 5  -  Into eclipse
+> Time position 6  -  Into eclipse
+> Time position 7  -  Into eclipse
+> Time position 8  -  Into eclipse
+> Time position 9  -  Into eclipse
+> Time position 10  -  Sun constant : 1418.07 W/m2
+> Time position 11  -  Sun constant : 1418.08 W/m2
+> Time position 12  -  Sun constant : 1418.11 W/m2
+> Time position 13  -  Sun constant : 1418.14 W/m2
+> Time position 14  -  Sun constant : 1418.17 W/m2
+> Time position 15  -  Sun constant : 1418.19 W/m2
+> Time position 16  -  Sun constant : 1418.21 W/m2
+> Time position 17  -  Sun constant : 1418.22 W/m2
+> Time position 18  -  Sun constant : 1418.23 W/m2
+> Time position 19  -  Sun constant : 1418.22 W/m2
+> Time position 20  -  Sun constant : 1418.21 W/m2
+> Time position 21  -  Sun constant : 1418.19 W/m2
+> Time position 22  -  Sun constant : 1418.16 W/m2
+> Time position 23  -  Sun constant : 1418.13 W/m2
+> Time position 24  -  Sun constant : 1418.1 W/m2
+> Time position 25  -  Sun constant : 1418.07 W/m2
+> Time position 26  -  Into eclipse
+> Time position 27  -  Into eclipse
+> Time position 28  -  Into eclipse
+> Time position 29  -  Into eclipse
+> Time position 30  -  Into eclipse
+> Time position 31  -  Into eclipse
+> Time position 32  -  Into eclipse
+> Time position 33  -  Into eclipse
+> Time position 34  -  Into eclipse
+> Time position 35  -  Into eclipse
+> Time position 36  -  Into eclipse
+> Time position 37  -  Sun constant : 1418.07 W/m2
+> Time position 38  -  Sun constant : 1418.08 W/m2
+> Time position 39  -  Sun constant : 1418.11 W/m2
+> Time position 40  -  Sun constant : 1418.15 W/m2
+> Time position 41  -  Sun constant : 1418.17 W/m2
+> Time position 42  -  Sun constant : 1418.2 W/m2
+> Time position 43  -  Sun constant : 1418.22 W/m2
+> Time position 44  -  Sun constant : 1418.23 W/m2
+> Time position 45  -  Sun constant : 1418.23 W/m2
+> Time position 46  -  Sun constant : 1418.22 W/m2
+> Time position 47  -  Sun constant : 1418.21 W/m2
+> Time position 48  -  Sun constant : 1418.19 W/m2
+> Time position 49  -  Sun constant : 1418.16 W/m2
+> Time position 50  -  Sun constant : 1418.13 W/m2
+> Time position 51  -  Sun constant : 1418.1 W/m2
+> Time position 52  -  Sun constant : 1418.07 W/m2
+> Time position 53  -  Into eclipse
+> Time position 54  -  Into eclipse
+> Time position 55  -  Into eclipse
+> Time position 56  -  Into eclipse
+> Time position 57  -  Into eclipse
+> Time position 58  -  Into eclipse
+> Time position 59  -  Into eclipse
+> Time position 60  -  Into eclipse
+> Time position 61  -  Into eclipse
+> Time position 62  -  Into eclipse
+> Time position 63  -  Into eclipse
+> Time position 64  -  Sun constant : 1418.07 W/m2
+> Time position 65  -  Sun constant : 1418.09 W/m2
+> Time position 66  -  Sun constant : 1418.12 W/m2
+> Time position 67  -  Sun constant : 1418.15 W/m2
+> Time position 68  -  Sun constant : 1418.18 W/m2
+> Time position 69  -  Sun constant : 1418.2 W/m2
+> Time position 70  -  Sun constant : 1418.22 W/m2
+> Time position 71  -  Sun constant : 1418.23 W/m2
+> Time position 72  -  Sun constant : 1418.23 W/m2
+> Time position 73  -  Sun constant : 1418.23 W/m2
+> Time position 74  -  Sun constant : 1418.21 W/m2
+> Time position 75  -  Sun constant : 1418.19 W/m2
+> Time position 76  -  Sun constant : 1418.17 W/m2
+> Time position 77  -  Sun constant : 1418.14 W/m2
+> Time position 78  -  Sun constant : 1418.11 W/m2
+> Time position 79  -  Sun constant : 1418.08 W/m2
+> Time position 80  -  Into eclipse
+> Time position 81  -  Into eclipse
+> Time position 82  -  Into eclipse
+> Time position 83  -  Into eclipse
+> Time position 84  -  Into eclipse
+> Time position 85  -  Into eclipse
+> Time position 86  -  Into eclipse
+> Time position 87  -  Into eclipse
+> Time position 88  -  Into eclipse
+> Time position 89  -  Into eclipse
+> Time position 90  -  Into eclipse
+> Time position 91  -  Sun constant : 1418.08 W/m2
+> Time position 92  -  Sun constant : 1418.09 W/m2
+> Time position 93  -  Sun constant : 1418.12 W/m2
+> Time position 94  -  Sun constant : 1418.15 W/m2
+> Time position 95  -  Sun constant : 1418.18 W/m2
+> Time position 96  -  Sun constant : 1418.21 W/m2
+> Time position 97  -  Sun constant : 1418.22 W/m2
+> Time position 98  -  Sun constant : 1418.23 W/m2
+> Time position 99  -  Sun constant : 1418.24 W/m2
+> Time position 100  -  Sun constant : 1418.23 W/m2
+> Time position 101  -  Sun constant : 1418.22 W/m2
+> Time position 102  -  Sun constant : 1418.2 W/m2
+> Time position 103  -  Sun constant : 1418.17 W/m2
+> Time position 104  -  Sun constant : 1418.14 W/m2
+> Time position 105  -  Sun constant : 1418.11 W/m2
+> Time position 106  -  Sun constant : 1418.08 W/m2
+> Time position 107  -  Into eclipse
+> Time position 108  -  Into eclipse
+> Time position 109  -  Into eclipse
+> Time position 110  -  Into eclipse
+> Time position 111  -  Into eclipse
+> Time position 112  -  Into eclipse
+> Time position 113  -  Into eclipse
+> Time position 114  -  Into eclipse
+> Time position 115  -  Into eclipse
+> Time position 116  -  Into eclipse
+> Time position 117  -  Into eclipse
+> Time position 118  -  Sun constant : 1418.08 W/m2
+> Time position 119  -  Sun constant : 1418.09 W/m2
+> Time position 120  -  Sun constant : 1418.13 W/m2
+> Time position 121  -  Sun constant : 1418.16 W/m2
+> Time position 122  -  Sun constant : 1418.18 W/m2
+> Time position 123  -  Sun constant : 1418.21 W/m2
+> Time position 124  -  Sun constant : 1418.23 W/m2
+> Time position 125  -  Sun constant : 1418.24 W/m2
+> Time position 126  -  Sun constant : 1418.24 W/m2
+> Time position 127  -  Sun constant : 1418.23 W/m2
+> Time position 128  -  Sun constant : 1418.22 W/m2
+> Time position 129  -  Sun constant : 1418.2 W/m2
+> Time position 130  -  Sun constant : 1418.18 W/m2
+> Time position 131  -  Sun constant : 1418.15 W/m2
+> Time position 132  -  Sun constant : 1418.12 W/m2
+> Time position 133  -  Sun constant : 1418.08 W/m2
+> Time position 134  -  Into eclipse
+> Time position 135  -  Into eclipse
+> Time position 136  -  Into eclipse
+> Time position 137  -  Into eclipse
+> Time position 138  -  Into eclipse
+> Time position 139  -  Into eclipse
+> Time position 140  -  Into eclipse
+> Time position 141  -  Into eclipse
+> Time position 142  -  Into eclipse
+> Time position 143  -  Into eclipse
+> Time position 144  -  Into eclipse
+> Time position 145  -  Sun constant : 1418.09 W/m2
+> Time position 146  -  Sun constant : 1418.1 W/m2
+> Time position 147  -  Sun constant : 1418.13 W/m2
+> Time position 148  -  Sun constant : 1418.16 W/m2
+> Time position 149  -  Sun constant : 1418.19 W/m2
+> Time position 150  -  Sun constant : 1418.21 W/m2
+> Time position 151  -  Sun constant : 1418.23 W/m2
+> Time position 152  -  Sun constant : 1418.24 W/m2
+> Time position 153  -  Sun constant : 1418.24 W/m2
+> Time position 154  -  Sun constant : 1418.24 W/m2
+> Time position 155  -  Sun constant : 1418.22 W/m2
+> Time position 156  -  Sun constant : 1418.2 W/m2
+> Time position 157  -  Sun constant : 1418.18 W/m2
+> Time position 158  -  Sun constant : 1418.15 W/m2
+> Time position 159  -  Sun constant : 1418.12 W/m2
+> Time position 160  -  Sun constant : 1418.09 W/m2
+> Time position 161  -  Into eclipse
+> Time position 162  -  Into eclipse
+> Time position 163  -  Into eclipse
+> Time position 164  -  Into eclipse
+> Time position 165  -  Into eclipse
+> Time position 166  -  Into eclipse
+> Time position 167  -  Into eclipse
+> Time position 168  -  Into eclipse
+> Time position 169  -  Into eclipse
+> Time position 170  -  Into eclipse
+> Time position 171  -  Into eclipse
+> Time position 172  -  Sun constant : 1418.09 W/m2
+> Time position 173  -  Sun constant : 1418.1 W/m2
+> Time position 174  -  Sun constant : 1418.13 W/m2
+> Time position 175  -  Sun constant : 1418.16 W/m2
+> Time position 176  -  Sun constant : 1418.19 W/m2
+> Time position 177  -  Sun constant : 1418.22 W/m2
+> Time position 178  -  Sun constant : 1418.23 W/m2
+> Time position 179  -  Sun constant : 1418.24 W/m2
+> Time position 180  -  Sun constant : 1418.25 W/m2
+> Time position 181  -  Sun constant : 1418.24 W/m2
+> Time position 182  -  Sun constant : 1418.23 W/m2
+> Time position 183  -  Sun constant : 1418.21 W/m2
+> Time position 184  -  Sun constant : 1418.18 W/m2
+> Time position 185  -  Sun constant : 1418.15 W/m2
+> Time position 186  -  Sun constant : 1418.12 W/m2
+> Time position 187  -  Sun constant : 1418.09 W/m2
+> Time position 188  -  Into eclipse
+> Time position 189  -  Into eclipse
+> Time position 190  -  Into eclipse
+> Time position 191  -  Into eclipse
+> Time position 192  -  Into eclipse
+> Time position 193  -  Into eclipse
+> Time position 194  -  Into eclipse
+> Time position 195  -  Into eclipse
+> Time position 196  -  Into eclipse
+> Time position 197  -  Into eclipse
+> Time position 198  -  Into eclipse
+> Time position 199  -  Sun constant : 1418.09 W/m2
+> Time position 200  -  Sun constant : 1418.1 W/m2
+> Time position 201  -  Sun constant : 1418.14 W/m2
+> Time position 202  -  Sun constant : 1418.17 W/m2
+> Time position 203  -  Sun constant : 1418.19 W/m2
+> Time position 204  -  Sun constant : 1418.22 W/m2
+> Time position 205  -  Sun constant : 1418.24 W/m2
+> Time position 206  -  Sun constant : 1418.25 W/m2
+> Time position 207  -  Sun constant : 1418.25 W/m2
+> Time position 208  -  Sun constant : 1418.25 W/m2
+> Time position 209  -  Sun constant : 1418.23 W/m2
+> Time position 210  -  Sun constant : 1418.21 W/m2
+> Time position 211  -  Sun constant : 1418.19 W/m2
+> Time position 212  -  Sun constant : 1418.16 W/m2
+> Time position 213  -  Sun constant : 1418.13 W/m2
+> Time position 214  -  Sun constant : 1418.09 W/m2
+> Time position 215  -  Into eclipse
+> Time position 216  -  Into eclipse
+> State  6 : SolarFlux Check-list generation
+> State  7 : Network Output Generation
+Execution of computation executable "Thermica - Solar_Flux" completed.
+>  
+> Execution completed on Thu Apr 09 17:02:52 2020
+
+>  **************************
+>  
+> Execution : C:/Program Files/Systema-4.8.3/applications//Thermica-4.8.3/ConductionWIN.exe -param Conduction.sysprm -mission ionsat_deployed_3.1.sysset -log ionsat_deployed_3.1.cond.log -gl ionsat_deployed_3.1.gl.nwk -edg ionsat_deployed_3.1.edg.h5
+>  
+>  
+>  **************************
+> Conduction Computation
+>  **************************
+> THERMICA 4.8.3 - 64 bits
+AIRBUS Defence and Space SAS - 2019 - All rights reserved
+Information contact : 
+Telephone : +33 (0)5 31 96 80 00
+Email : engineering.software@airbus.com
+
+About license :
+Valid local license found, expires at 31/08/2020
+(file: C:/Program Files/Systema-4.8.3/licenses\Polytech_Marmuse.moslf).
+
+>   - Number of active threads : 8 ( / 8 available)
+
+> State  1 : Model Initialisation
+> State  2 : Thermal Data Loading
+> State  3 : Mission Data Loading
+> State  4 : Edges creation (border)
+> State  4 : Edges creation (contact)
+> State  4 : Edges creation (edges)
+> State  5 : Computation of couplings via RCN
+> State  6 : Simplification of couplings
+> State  7 : Network Output generation
+Execution of computation executable "Thermica - Conduction" completed.
+>  
+> Execution completed on Thu Apr 09 17:04:39 2020
+
+>  **************************
+>  
+> Execution : C:/Program Files/Systema-4.8.3/applications//Thermica-4.8.3/NodeWIN.exe -param Nodal_Description.sysprm -mission ionsat_deployed_3.1.sysset -log ionsat_deployed_3.1.nod.log -nwk ionsat_deployed_3.1.nod.nwk
+>  
+>  
+>  **************************
+> Nodal description
+>  **************************
+> THERMICA 4.8.3 - 64 bits
+AIRBUS Defence and Space SAS - 2019 - All rights reserved
+Information contact : 
+Telephone : +33 (0)5 31 96 80 00
+Email : engineering.software@airbus.com
+
+About license :
+Valid local license found, expires at 31/08/2020
+(file: C:/Program Files/Systema-4.8.3/licenses\Polytech_Marmuse.moslf).
+
+> State  1 : Model Initialisation
+> State  2 : Thermal Data Loading
+> State  3 : Contact Management
+> State  4 : Mission Data Loading
+> State  5 : Network Output generation
+> * WARNING *
+> Node 1200 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1200 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1201 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1201 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1202 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1202 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1203 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1203 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1204 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1204 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1205 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1205 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1206 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1206 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1207 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1207 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1208 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1208 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1209 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1209 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1210 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1210 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1211 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1211 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1212 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1212 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1213 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1213 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1214 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1214 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1215 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1215 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1216 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1216 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1217 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1217 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1218 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1218 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1219 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1219 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1220 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1220 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1221 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1221 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1222 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1222 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1223 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1223 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1224 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1224 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1225 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1225 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1226 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1226 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1227 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1227 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1228 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1228 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1229 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1229 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1230 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1230 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1231 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1231 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1232 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1232 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1233 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1233 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1234 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1234 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1235 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1235 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1236 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1236 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1237 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1237 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1238 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1238 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1239 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1239 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1240 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1240 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1241 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1241 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1242 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1242 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1243 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1243 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1244 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1244 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1245 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1245 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1246 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1246 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1247 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1247 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1248 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1248 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1249 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1249 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1250 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1250 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1251 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1251 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1252 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1252 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1253 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1253 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1254 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1254 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1255 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1255 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1256 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1256 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1257 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1257 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1258 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1258 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1259 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1259 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1260 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1260 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1261 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1261 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1262 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1262 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1263 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1263 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1264 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1264 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1265 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1265 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1266 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1266 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1267 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1267 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1268 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1268 has IR coating properties partially overloaded.
+> * WARNING *
+> Node 1269 has UV coating properties partially overloaded.
+> * WARNING *
+> Node 1269 has IR coating properties partially overloaded.
+> State  6 : Adding specific items
+Execution of computation executable "Thermica - Nodal_Description" completed.
+>  
+> Execution completed on Thu Apr 09 17:04:44 2020
+
+>  **************************
+>  
+> Execution : C:/Program Files/Systema-4.8.3/applications//Thermisol-4.8.3/SkeletonWIN.exe -param Skeleton.sysprm -nwk ionsat_deployed_3.1.nod.nwk -gl ionsat_deployed_3.1.gl.nwk -gr ionsat_deployed_3.1.gr.nwk -fp ionsat_deployed_3.1.pf.nwk -fs ionsat_deployed_3.1.sf.nwk -dck ionsat_deployed_3.1.dck
+>  
+>  
+>  **************************
+> Skeleton Generation
+>  **************************
+> THERMISOL 4.8.3 - 64 bits
+AIRBUS Defence and Space SAS - 2019 - All rights reserved
+Information contact : 
+Telephone : +33 (0)5 31 96 80 00
+Email : engineering.software@airbus.com
+
+About license :
+Valid local license found, expires at 31/08/2020
+(file: C:/Program Files/Systema-4.8.3/licenses\Polytech_Marmuse.moslf).
+
+> State  1 : Skeleton generation
+> State  1 : Skeleton expansion
+>    using file - ionsat_deployed_3.1.nod.nwk
+>    using file - ionsat_deployed_3.1.gl.nwk
+>    using file - ionsat_deployed_3.1.gr.nwk
+>    using file - ionsat_deployed_3.1.pf.nwk
+>    using file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $INFOS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.sf.nwk
+>       -> block found
+> Entering new block   $GLOBAL
+> Entering new block   $LOCALS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $VARIABLES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $ARRAYS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $TABLES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $EVENTS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $MODEL
+> Opening model  ionsat_deployed_3.1
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $ENTITIES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $NODES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $EDGES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $CONDUCTORS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $LOCALS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $EVENTS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $ARRAYS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.sf.nwk
+>       -> block found
+> Entering new block   $TABLES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $VARIABLES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $CONTROL
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.sf.nwk
+>       -> block found
+> Entering new block   $SUBROUTINES
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.sf.nwk
+>       -> block found
+> Entering new block   $INITIAL
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.sf.nwk
+>       -> block found
+> Entering new block   $VTEMPERATURE
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $VTIME
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>       -> block found
+>    reading file - ionsat_deployed_3.1.sf.nwk
+>       -> block found
+> Entering new block   $VRESULT
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $OUTPUTS
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Entering new block   $EXECUTION
+>    reading file - ionsat_deployed_3.1.nod.nwk
+>    reading file - ionsat_deployed_3.1.gl.nwk
+>    reading file - ionsat_deployed_3.1.gr.nwk
+>    reading file - ionsat_deployed_3.1.pf.nwk
+>    reading file - ionsat_deployed_3.1.sf.nwk
+> Closing model  ionsat_deployed_3.1
+>  
+Execution of computation executable "Thermisol - Skeleton" completed.
+> Execution completed on Thu Apr 09 17:04:52 2020
+
+>  **************************
+>  
+> Execution : C:/Program Files/Systema-4.8.3/applications//Thermisol-4.8.3/SolverWIN.exe -param Solver.sysprm -dck ionsat_deployed_3.1.dck -log ionsat_deployed_3.1.temp.log -csv ionsat_deployed_3.1.temp.csv -out ionsat_deployed_3.1.temp.out -hdf ionsat_deployed_3.1.temp.h5
+>  
+>  
+>  **************************
+> Temperature Solver Execution
+>  **************************
+> State  1 : Creation of user fortran code
+> "C:\Program Files\Systema-4.8.3\applications\Thermisol-4.8.3\PreproWIN.exe" "ionsat_deployed_3.1.dck" "ionsat_deployed_3.1.temp.out" "ionsat_deployed_3.1.temp.h5" "ionsat_deployed_3.1.temp.csv" "ionsat_deployed_3.1.temp.log" "-" 0
+> State  2 : Compilation of user code
+> g77 -fno-underscoring -fno-globals -w -c "zz_ionsat_deployed_3.1_for.f"
+> State  3 : Link with solver library
+> g77 -fno-underscoring -fno-globals -w -o "zz_ionsat_deployed_3.1_prg_WIN.exe" "zz_ionsat_deployed_3.1_for.o" "C:\Program Files\Systema-4.8.3\applications\Thermisol-4.8.3\..\Libsolver-4.8.3\SolverLibWIN.a"  -ladvapi32 -lnetapi32 -lwsock32 "C:\Program Files\Systema-4.8.3\applications\Thermisol-4.8.3\..\Libsolver-4.8.3\PowerDummyLibWIN.a"
+> State  4 : Execution of solution program
+> .\zz_ionsat_deployed_3.1_prg_WIN.exe
+> THERMISOL 4.8.3 - 64 bits
+AIRBUS Defence and Space SAS - 2019 - All rights reserved
+Information contact : 
+Telephone : +33 (0)5 31 96 80 00
+Email : engineering.software@airbus.com
+
+About license :
+Valid local license found, expires at 31/08/2020
+(file: C:/Program Files/Systema-4.8.3/licenses\Polytech_Marmuse.moslf).
+
+Execution of computation executable "Thermisol - Solver" completed.
+>  
+> Execution completed on Thu Apr 09 17:05:11 2020
+
+>  **************************
+>  

@@ -1,0 +1,1767 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="MODEL" SAVEDATE="1606927112" SYSTEMA_VERSION="4.8.3P1">
+    <DATA_STRUCTURE NAME="ionsat_deployed_3.1.sysmdl" REFSET_ID="{a53397b3-1625-482b-b6d7-dabc69f6e5a4}">
+        <DATA_NODE TYPE="MODEL" REFOBJ_ID="2" NAME="Ionsat">
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="3" NAME="Chassis bottom center">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="7" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.0275" Y="0.1" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="-0.0275" Y="-0.1" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0.1775" Y="-0.1" Z="-0.05" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.004"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <ELEM TYPE="STRING" ID="ActivityId" STR="PLUSFACE"/>
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="8" NAME="Chassis bottom left">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="9" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1775" Y="0.1" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="-0.1775" Y="0.048" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="-0.0275" Y="0.048" Z="-0.05" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.004"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <ELEM TYPE="STRING" ID="ActivityId" STR="PLUSFACE"/>
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="10" NAME="Chassis bottom right">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="11" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1775" Y="-0.048" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="-0.1775" Y="-0.1" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="-0.0275" Y="-0.1" Z="-0.05" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.004"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <ELEM TYPE="STRING" ID="ActivityId" STR="PLUSFACE"/>
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="12" NAME="Chassis side front">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="13" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="0.1775" Y="0.1" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="0.1775" Y="-0.1" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0.1775" Y="-0.1" Z="0.05" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.004"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <ELEM TYPE="STRING" ID="ActivityId" STR="PLUSFACE"/>
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="14" NAME="Chassis side back left">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="15" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1775" Y="0.1" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="-0.1775" Y="0.048" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="-0.1775" Y="0.048" Z="0.05" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.004"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <ELEM TYPE="STRING" ID="ActivityId" STR="PLUSFACE"/>
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="16" NAME="Chassis side back right">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="17" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1775" Y="-0.048" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="-0.1775" Y="-0.1" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="-0.1775" Y="-0.1" Z="0.05" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.004"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <ELEM TYPE="STRING" ID="ActivityId" STR="PLUSFACE"/>
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="18" NAME="Chassis side left">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="19" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1775" Y="0.1" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="0.1775" Y="0.1" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0.1775" Y="0.1" Z="0.05" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk"/>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.004"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <ELEM TYPE="STRING" ID="ActivityId" STR="PLUSFACE"/>
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="20" NAME="Chassis side right">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="21" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1775" Y="-0.1" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="0.1775" Y="-0.1" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0.1775" Y="-0.1" Z="0.05" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk"/>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.004"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <ELEM TYPE="STRING" ID="ActivityId" STR="PLUSFACE"/>
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="22" NAME="Chassis top">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="23" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1775" Y="0.12" Z="0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="-0.1775" Y="-0.12" Z="0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0.1775" Y="-0.12" Z="0.05" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="SSM"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="SSM"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <ELEM TYPE="STRING" ID="ActivityId" STR="PLUSFACE"/>
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.003"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <ELEM TYPE="STRING" ID="ActivityId" STR="PLUSFACE"/>
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="24" NAME="Chassis propeller support left">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="25" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1775" Y="0.04801" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="-0.0275" Y="0.04801" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="-0.0275" Y="0.04801" Z="0.05" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.004"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <ELEM TYPE="STRING" ID="ActivityId" STR="MINUSFACE"/>
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Black Paint"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Black Paint"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="26" NAME="Chassis propeller support right">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="27" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1775" Y="-0.04801" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="-0.0275" Y="-0.04801" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="-0.0275" Y="-0.04801" Z="0.05" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.004"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <ELEM TYPE="STRING" ID="ActivityId" STR="MINUSFACE"/>
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Black Paint"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Black Paint"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="28" NAME="Solar panel center">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="29" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1553125" Y="0.1" Z="0.05001" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="-0.1553125" Y="-0.1" Z="0.05001" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0.1553125" Y="-0.1" Z="0.05001" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <ELEM TYPE="STRING" ID="ActivityId" STR="PLUSFACE"/>
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating" INHERITED="FALSE">
+                            <ELEM TYPE="STRING" ID="FaceId" STR="BOTHFACE"/>
+                            <FACE NAME="Positive side">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="SunCell"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="SunCell"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.0015"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <ELEM TYPE="STRING" ID="ActivityId" STR="PLUSFACE"/>
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="SunCell"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="SunCell"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="30" NAME="Solar panel left">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="31" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1625" Y="0.10001" Z="0.0375" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="0.1625" Y="0.10001" Z="0.0375" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0.1625" Y="0.267125" Z="0.0375" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating">
+                            <FACE NAME="Negative side">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                            <FACE NAME="Positive side">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="SunCell"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="SunCell"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.0015"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating" INHERITED="FALSE">
+                        <ELEM TYPE="STRING" ID="FaceId" STR="BOTHFACE"/>
+                        <FACE NAME="Negative side">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                        <FACE NAME="Positive side">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="SunCell"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="SunCell"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="32" NAME="Solar panel right">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="33" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1625" Y="-0.10001" Z="0.0375" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="0.1625" Y="-0.10001" Z="0.0375" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0.1625" Y="-0.267125" Z="0.0375" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating" INHERITED="FALSE">
+                            <ELEM TYPE="STRING" ID="FaceId" STR="BOTHFACE"/>
+                            <FACE NAME="Negative side">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                            <FACE NAME="Positive side">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="SunCell"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="SunCell"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.0015"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating" INHERITED="FALSE">
+                        <ELEM TYPE="STRING" ID="FaceId" STR="BOTHFACE"/>
+                        <FACE NAME="Negative side">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="White Paint"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                        <FACE NAME="Positive side">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY NAME="Thermo-optical IR">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="SunCell"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Thermo-optical UV">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="SunCell"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="34" NAME="Propeller side front">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="35" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.0275" Y="0.048" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="-0.0275" Y="-0.048" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="-0.0275" Y="-0.048" Z="0.046" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating"/>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.003"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Thermo_optical_IR" NAME="Thermo-optical IR">
+                                    <ELEM TYPE="VALUE" ID="Epsilon" VALUE="0"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY ID="Thermo_optical_UV" NAME="Thermo-optical UV">
+                                    <ELEM TYPE="VALUE" ID="Alpha" VALUE="0"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="36" NAME="Propeller side left">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="37" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1775" Y="0.048" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="-0.0275" Y="0.048" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="-0.0275" Y="0.048" Z="0.046" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating"/>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.003"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 2024"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Thermo_optical_IR" NAME="Thermo-optical IR">
+                                    <ELEM TYPE="VALUE" ID="Epsilon" VALUE="0"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY ID="Thermo_optical_UV" NAME="Thermo-optical UV">
+                                    <ELEM TYPE="VALUE" ID="Alpha" VALUE="0"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="38" NAME="Propeller side right">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="39" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.0275" Y="-0.048" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="-0.1775" Y="-0.048" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="-0.1775" Y="-0.048" Z="0.046" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating"/>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.003"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Thermo_optical_IR" NAME="Thermo-optical IR">
+                                    <ELEM TYPE="VALUE" ID="Epsilon" VALUE="0"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY ID="Thermo_optical_UV" NAME="Thermo-optical UV">
+                                    <ELEM TYPE="VALUE" ID="Alpha" VALUE="0"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="40" NAME="Propeller top">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="41" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1775" Y="0.048" Z="0.046" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="-0.1775" Y="-0.048" Z="0.046" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="-0.0275" Y="-0.048" Z="0.046" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating"/>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.003"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Thermo_optical_IR" NAME="Thermo-optical IR">
+                                    <ELEM TYPE="VALUE" ID="Epsilon" VALUE="0"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY ID="Thermo_optical_UV" NAME="Thermo-optical UV">
+                                    <ELEM TYPE="VALUE" ID="Alpha" VALUE="0"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="43" NAME="Propeller bottom">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="44" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1775" Y="0.048" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="-0.1775" Y="-0.048" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="-0.0275" Y="-0.048" Z="-0.05" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating"/>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.003"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Thermo_optical_IR" NAME="Thermo-optical IR">
+                                    <ELEM TYPE="VALUE" ID="Epsilon" VALUE="0"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY ID="Thermo_optical_UV" NAME="Thermo-optical UV">
+                                    <ELEM TYPE="VALUE" ID="Alpha" VALUE="0"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="45" NAME="Propeller side back">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="46" NAME="New Rectangle">
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="RECTANGLE_3P" REVERSE_NORMAL="false" TYPE="SHAPE" NAME="Rectangle">
+                            <ELEM X="-0.1775" Y="0.048" Z="-0.05" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="-0.1775" Y="-0.048" Z="-0.05" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="-0.1775" Y="-0.048" Z="0.046" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating"/>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.003"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Thermo_optical_IR" NAME="Thermo-optical IR">
+                                    <ELEM TYPE="VALUE" ID="Epsilon" VALUE="0"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY ID="Thermo_optical_UV" NAME="Thermo-optical UV">
+                                    <ELEM TYPE="VALUE" ID="Alpha" VALUE="0"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="49" NAME="Band S front">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="127" NAME="New Disc (1)">
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating">
+                            <ELEM TYPE="STRING" ID="ActivityId" STR="BOTHFACE"/>
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Black Paint"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Black Paint"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="DISC_3PBIS" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Disc">
+                            <ELEM X="0.17751" Y="0" Z="0.04" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="0.17751" Y="0.04" Z="0" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0.17751" Y="0" Z="-0.04" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.003"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating"/>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="51" NAME="Band S bottom">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="128" NAME="New Disc (1)">
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="SHELL" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                        <CONTENER TYPE="SHELL" NAME="Coating">
+                            <ELEM TYPE="STRING" ID="ActivityId" STR="BOTHFACE"/>
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Thermo-optical IR">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Black Paint"/>
+                                    </PROP_CATEGORY>
+                                    <PROP_CATEGORY NAME="Thermo-optical UV">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Black Paint"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                        <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="DISC_3PBIS" REVERSE_NORMAL="true" TYPE="SHAPE" NAME="Disc">
+                            <ELEM X="0.07107" Y="0" Z="-0.05001" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="0.03107" Y="0.04" Z="-0.05001" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="-0.00893" Y="0" Z="-0.05001" TYPE="POINT" NAME="Point 3"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.003"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating"/>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="130" NAME="Batteries">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="110" NAME="Battery 1">
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="111" NAME="Face 1">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="112" NAME="Face 2">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="113" NAME="Face 3">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="114" NAME="Face 4">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="115" NAME="Face 5">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="116" NAME="Face 6">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="VOLUME" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                        <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="VolumicBox" TYPE="SHAPE" NAME="Volumic Box">
+                            <ELEM X="0.08964" Y="0" Z="-0.049" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="0.148214" Y="0" Z="-0.049" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0.08964" Y="0.03" Z="-0.049" TYPE="POINT" NAME="Point 3"/>
+                            <ELEM X="0.08964" Y="0" Z="0.039" TYPE="POINT" NAME="Point 4"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="117" NAME="Battery 2">
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="118" NAME="Face 1">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="119" NAME="Face 2">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="120" NAME="Face 3">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="121" NAME="Face 4">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="122" NAME="Face 5">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="123" NAME="Face 6">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="VOLUME" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                        <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="VolumicBox" TYPE="SHAPE" NAME="Volumic Box">
+                            <ELEM X="0.08964" Y="0.032" Z="-0.049" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="0.148214" Y="0.032" Z="-0.049" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0.08964" Y="0.062" Z="-0.049" TYPE="POINT" NAME="Point 3"/>
+                            <ELEM X="0.08964" Y="0.032" Z="0.039" TYPE="POINT" NAME="Point 4"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.003"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Thermo_optical_IR" NAME="Thermo-optical IR">
+                                    <ELEM TYPE="VALUE" ID="Epsilon" VALUE="0"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY ID="Thermo_optical_UV" NAME="Thermo-optical UV">
+                                    <ELEM TYPE="VALUE" ID="Alpha" VALUE="0"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="132" NAME="Transponder (1)">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="96" NAME="Transponder">
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="97" NAME="Face 1">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="98" NAME="Face 2">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="99" NAME="Face 3">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="100" NAME="Face 4">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="101" NAME="Face 5">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="102" NAME="Face 6">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="VOLUME" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                        <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="VolumicBox" TYPE="SHAPE" NAME="Volumic Box">
+                            <ELEM X="0.148214" Y="-0.05" Z="-0.049" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="0.07" Y="-0.05" Z="-0.049" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0.148214" Y="-0.075" Z="-0.049" TYPE="POINT" NAME="Point 3"/>
+                            <ELEM X="0.07" Y="0" Z="0.039" TYPE="POINT" NAME="Point 4"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.003"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Thermo_optical_IR" NAME="Thermo-optical IR">
+                                    <ELEM TYPE="VALUE" ID="Epsilon" VALUE="0"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY ID="Thermo_optical_UV" NAME="Thermo-optical UV">
+                                    <ELEM TYPE="VALUE" ID="Alpha" VALUE="0"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="147" NAME="Printed Circuits">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="103" NAME="Printed Circuits">
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="104" NAME="Face 1">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="105" NAME="Face 2">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="106" NAME="Face 3">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="107" NAME="Face 4">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="108" NAME="Face 5">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="109" NAME="Face 6">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="VOLUME" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                        <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="VolumicBox" TYPE="SHAPE" NAME="Volumic Box">
+                            <ELEM X="-0.0275" Y="-0.06" Z="-0.049" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="0.06" Y="-0.06" Z="-0.049" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="-0.0275" Y="-0.095" Z="-0.049" TYPE="POINT" NAME="Point 3"/>
+                            <ELEM X="0.060357" Y="-0.095" Z="0.039" TYPE="POINT" NAME="Point 4"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.003"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Thermo_optical_IR" NAME="Thermo-optical IR">
+                                    <ELEM TYPE="VALUE" ID="Epsilon" VALUE="0"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY ID="Thermo_optical_UV" NAME="Thermo-optical UV">
+                                    <ELEM TYPE="VALUE" ID="Alpha" VALUE="0"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+            <DATA_NODE TYPE="OBJECT" REFOBJ_ID="162" NAME="Powercard P60">
+                <DATA_NODE TYPE="SHAPE" REFOBJ_ID="89" NAME="Powercard P60">
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="90" NAME="Face 1">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="91" NAME="Face 2">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="92" NAME="Face 3">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="93" NAME="Face 4">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="94" NAME="Face 5">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <DATA_NODE TYPE="SHAPE" REFOBJ_ID="95" NAME="Face 6">
+                        <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE"/>
+                    </DATA_NODE>
+                    <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                        <CONTENER TYPE="VOLUME" NAME="Bulk">
+                            <FACE NAME="Alike sides">
+                                <LAYER NAME="Layer 1">
+                                    <PROP_CATEGORY NAME="Physical properties">
+                                        <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                    </PROP_CATEGORY>
+                                </LAYER>
+                            </FACE>
+                        </CONTENER>
+                        <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                        <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="SHAPE" NAME="SHAPE">
+                        <ELEM SHAPETYPE="VolumicBox" TYPE="SHAPE" NAME="Volumic Box">
+                            <ELEM X="0.148214" Y="-0.025" Z="-0.049" TYPE="POINT" NAME="Point 1"/>
+                            <ELEM X="0.07" Y="-0.025" Z="-0.049" TYPE="POINT" NAME="Point 2"/>
+                            <ELEM X="0.148214" Y="-0.045" Z="-0.049" TYPE="POINT" NAME="Point 3"/>
+                            <ELEM X="0.07" Y="-0.025" Z="0.039" TYPE="POINT" NAME="Point 4"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+                <NODE_ATTRIBUTE TYPE="PROP_APPLI" NAME="Thermica">
+                    <CONTENER TYPE="SHELL" NAME="Bulk">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Geom_Prop" NAME="Geometrical properties">
+                                    <ELEM TYPE="VALUE" ID="Thickness" VALUE="0.003"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY NAME="Physical properties">
+                                    <ELEM TYPE="STRING" NAME="Selected material" STR="Aluminium 6061"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Bulk"/>
+                    <CONTENER TYPE="SHELL" NAME="Transverse"/>
+                    <CONTENER TYPE="SHELL" NAME="Coating">
+                        <FACE NAME="Alike sides">
+                            <LAYER NAME="Layer 1">
+                                <PROP_CATEGORY ID="Thermo_optical_IR" NAME="Thermo-optical IR">
+                                    <ELEM TYPE="VALUE" ID="Epsilon" VALUE="0"/>
+                                </PROP_CATEGORY>
+                                <PROP_CATEGORY ID="Thermo_optical_UV" NAME="Thermo-optical UV">
+                                    <ELEM TYPE="VALUE" ID="Alpha" VALUE="0"/>
+                                </PROP_CATEGORY>
+                            </LAYER>
+                        </FACE>
+                    </CONTENER>
+                    <CONTENER TYPE="VOLUME" NAME="Coating"/>
+                    <CONTENER TYPE="SHELL" NAME="Miscellaneous"/>
+                    <CONTENER TYPE="SHELL" NAME="Enclosure"/>
+                    <CONTENER TYPE="VOLUME" NAME="Enclosure"/>
+                </NODE_ATTRIBUTE>
+            </DATA_NODE>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

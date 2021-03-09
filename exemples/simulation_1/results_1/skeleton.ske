@@ -1,0 +1,209 @@
+# Skeleton for Thermisol
+# 
+# Wed Dec  2 17:35:19 2020
+
+
+
+#USE "ionsat_deployed_3.1.nod.nwk"
+#USE "ionsat_deployed_3.1.gl.nwk"
+#USE "ionsat_deployed_3.1.gr.nwk"
+#USE "ionsat_deployed_3.1.pf.nwk"
+#USE "ionsat_deployed_3.1.sf.nwk"
+
+
+$INFOS
+
+
+
+#--------------------------------#
+#                                #
+#        GLOBAL Variables        #
+#                                #
+#--------------------------------#
+
+$GLOBAL
+   $LOCALS
+   $VARIABLES
+   $ARRAYS
+   $TABLES
+   $EVENTS
+$ENDGLOBAL
+
+$MODEL  ionsat_deployed_3.1
+
+
+#          /------------------------------------------------------\
+#          |                                                      |
+#          |                                                      |
+#          |                   DECLARATIVE PART                   |
+#          |                                                      |
+#          |                                                      |
+#          /------------------------------------------------------\
+
+
+#--------------------------------#
+#                                #
+#       Network definition       #
+#                                #
+#--------------------------------#
+
+
+
+$ENTITIES
+
+$NODES
+
+
+$EDGES
+
+
+$CONDUCTORS
+
+
+
+
+#--------------------------------#
+#                                #
+#      Variables declaration     #
+#                                #
+#--------------------------------#
+
+# This paragraph defines unmodifiable local constants
+$LOCALS
+
+      INTEGER* NBORBIT = 1;
+      INTEGER* NB_NODISP   = 0;
+      INTEGER* NB_DISPLAY  = 1;
+
+# This paragraph defines time events
+$EVENTS
+
+
+
+$ARRAYS
+
+
+$TABLES
+
+
+# This paragraph defines user variables (automatically updated if declared using a formulae)
+$VARIABLES
+
+
+
+
+#--------------------------------#
+#                                #
+#       Control parameters       #
+#                                #
+#--------------------------------#
+
+$CONTROL
+
+
+   # generic control parameters (default values)
+   DAMPT  = 1;    # for automatic damping update
+   TABS   = 273.15;    # Kelvin to Celsius convertion shift
+   STEFAN = 5.6686e-08;    # Stefan-Boltzman constant
+
+   # convergence control file frequency
+   CSV_FREQ  = 10;
+
+   # h5 output definition
+   # initial data storage
+   H5_RES0  = 'NS,A,C,ALP,EPS,GL,GR,GF';
+   # frequency data storage
+   H5_FREQ = 4;
+   H5_RES1  = 'T,QS,QA,QE,QI,QR';
+
+
+
+
+
+
+
+
+
+#          /------------------------------------------------------\
+#          |                                                      |
+#          |                                                      |
+#          |                    EXECUTIVE PART                    |
+#          |                                                      |
+#          |                                                      |
+#          /------------------------------------------------------\
+
+
+
+#--------------------------------#
+#                                #
+#     Subroutines definition     #
+#                                #
+#--------------------------------#
+
+$SUBROUTINES
+
+
+
+
+#--------------------------------#
+#                                #
+# Thermisol Auto-executed blocks #
+#                                #
+#--------------------------------#
+
+$INITIAL
+
+
+# This paragraph executes temperature dependant data
+$VTEMPERATURE
+
+
+
+# This paragraph executes time dependant data
+$VTIME
+
+
+
+# This paragraph executes descret dependances
+$VRESULT
+
+
+
+# This paragraph executes output command at each OUTINT time interval
+$OUTPUTS
+
+      CALL PRNDTB(' ','L,C,T,QS,QA,QE,QI,QR',CURRENT)
+
+
+
+#--------------------------------#
+#                                #
+#    Main executive paragraph    #
+#                                #
+#--------------------------------#
+
+
+$EXECUTION
+
+      # Steady-state case
+      RELXCA = 0.0001
+      INBALA = 1000
+      INBALR = 100
+      NLOOP  = 10000
+      CALL SOLVIT
+      
+      # Transient case
+      RELXCA = 0.0001
+      INBALT = 1000
+      NLOOP  = 1000
+      TIMEO  = -NB_NODISP  * PERIOD
+      TIMEND =  NB_DISPLAY * PERIOD
+      DTIMEI  = 10
+      OUTINT  = PERIOD / 20
+      U_DTIMEI  = 10
+      U_DTMIN  = 1
+      CALL SCRANK
+
+
+$ENDMODEL
+

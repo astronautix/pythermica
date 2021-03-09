@@ -1,0 +1,1181 @@
+
+#**********************************************#
+#                                              #
+#     Nodal Description created by Thermica    #
+#                                              #
+#**********************************************#
+
+$INFOS
+
+#  Nodal description
+#  --------------------
+#
+#  File : ionsat_deployed_3.1.nod.nwk
+#  Version : Thermica  V.4.8.3P1 released on September 2019
+#  Executed on : Wed Dec  2 17:11:05 2020
+#  Input files :
+#    - Sysset : ionsat_deployed_3.1.sysset
+
+$GLOBAL
+   $LOCALS
+      # Aluminium_2024
+      REAL COND_Aluminium_2024 = 120.00;
+      REAL DENS_Aluminium_2024 = 2770.00;
+      REAL CP_Aluminium_2024   = 920.00;
+      # White_Paint
+      REAL EPS_White_Paint  = 0.810;
+      REAL ALP_White_Paint  = 0.250;
+      # SSM
+      REAL EPS_SSM  = 0.780;
+      REAL ALP_SSM  = 0.230;
+      # Black_Paint
+      REAL EPS_Black_Paint  = 0.900;
+      REAL ALP_Black_Paint  = 0.950;
+      # Aluminium_6061
+      REAL COND_Aluminium_6061 = 167.00;
+      REAL DENS_Aluminium_6061 = 2700.00;
+      REAL CP_Aluminium_6061   = 940.00;
+      # SunCell
+      REAL EPS_SunCell  = 0.820;
+      REAL ALP_SunCell  = 0.740;
+   $ARRAYS
+      REAL Propeller_dissipation(2, 5) =
+                 0.000, 0.0000,
+                 7200.000, 0.0000,
+                 7201.000, 450.0000,
+                 10800.000, 450.0000,
+                 10801.000, 0.0000;
+$ENDGLOBAL
+
+
+$ENTITIES
+   # Volumes
+  REAL* VOLUM;
+
+$NODES
+
+   # Geometrical Nodes
+  D       100 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       101 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       102 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       103 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       104 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       105 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       106 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       107 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       108 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       109 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       110 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       111 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       112 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       113 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       114 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       115 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       116 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       117 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       118 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       119 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       120 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       121 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       122 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       123 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       124 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       125 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       126 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       127 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       128 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       129 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       130 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       131 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       132 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       133 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       134 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       135 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       136 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       137 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       138 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       139 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       140 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       141 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       142 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       143 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       144 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       145 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       146 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       147 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       148 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       149 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       150 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       151 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       152 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       153 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       154 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       155 = '/Chassis bottom center              ', T= 0.000, A= 7.321429E-04, C= 2.9286E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       200 = '/Chassis bottom left                ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       201 = '/Chassis bottom left                ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       202 = '/Chassis bottom left                ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       203 = '/Chassis bottom left                ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       204 = '/Chassis bottom left                ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       205 = '/Chassis bottom left                ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       206 = '/Chassis bottom left                ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       207 = '/Chassis bottom left                ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       208 = '/Chassis bottom left                ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       209 = '/Chassis bottom left                ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       300 = '/Chassis bottom right               ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       301 = '/Chassis bottom right               ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       302 = '/Chassis bottom right               ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       303 = '/Chassis bottom right               ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       304 = '/Chassis bottom right               ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       305 = '/Chassis bottom right               ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       306 = '/Chassis bottom right               ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       307 = '/Chassis bottom right               ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       308 = '/Chassis bottom right               ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       309 = '/Chassis bottom right               ', T= 0.000, A= 7.800000E-04, C= 3.1200E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       400 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       401 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       402 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       403 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       404 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       405 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       406 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       407 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       408 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       409 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       410 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       411 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       412 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       413 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       414 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       415 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       416 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       417 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       418 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       419 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       420 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       421 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       422 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       423 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       424 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       425 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       426 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       427 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       428 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       429 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       430 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       431 = '/Chassis side front                 ', T= 0.000, A= 6.250000E-04, C= 2.5000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       500 = '/Chassis side back left             ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       501 = '/Chassis side back left             ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       502 = '/Chassis side back left             ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       503 = '/Chassis side back left             ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       504 = '/Chassis side back left             ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       505 = '/Chassis side back left             ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       506 = '/Chassis side back left             ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       507 = '/Chassis side back left             ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       600 = '/Chassis side back right            ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       601 = '/Chassis side back right            ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       602 = '/Chassis side back right            ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       603 = '/Chassis side back right            ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       604 = '/Chassis side back right            ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       605 = '/Chassis side back right            ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       606 = '/Chassis side back right            ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       607 = '/Chassis side back right            ', T= 0.000, A= 6.500000E-04, C= 2.6000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       700 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       701 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       702 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       703 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       704 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       705 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       706 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       707 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       708 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       709 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       710 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       711 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       712 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       713 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       714 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       715 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       716 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       717 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       718 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       719 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       720 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       721 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       722 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       723 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       724 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       725 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       726 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       727 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       728 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       729 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       730 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       731 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       732 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       733 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       734 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       735 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       736 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       737 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       738 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       739 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       740 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       741 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       742 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       743 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       744 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       745 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       746 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       747 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       748 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       749 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       750 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       751 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       752 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       753 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       754 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       755 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       756 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       757 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       758 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       759 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       760 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       761 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       762 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       763 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       764 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       765 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       766 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       767 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       768 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       769 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       770 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       771 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       772 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       773 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       774 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       775 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       776 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       777 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       778 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       779 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       780 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       781 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       782 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       783 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       784 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       785 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       786 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       787 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       788 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       789 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       790 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       791 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       792 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       793 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       794 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       795 = '/Chassis side left                  ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       800 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       801 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       802 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       803 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       804 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       805 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       806 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       807 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       808 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       809 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       810 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       811 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       812 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       813 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       814 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       815 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       816 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       817 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       818 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       819 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       820 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       821 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       822 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       823 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       824 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       825 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       826 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       827 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       828 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       829 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       830 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       831 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       832 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       833 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       834 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       835 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       836 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       837 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       838 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       839 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       840 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       841 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       842 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       843 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       844 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       845 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       846 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       847 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       848 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       849 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       850 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       851 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       852 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       853 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       854 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       855 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       856 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       857 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       858 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       859 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       860 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       861 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       862 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       863 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       864 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       865 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       866 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       867 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       868 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       869 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       870 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       871 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       872 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       873 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       874 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       875 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       876 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       877 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       878 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       879 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       880 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       881 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       882 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       883 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       884 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       885 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       886 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       887 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       888 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       889 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       890 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       891 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       892 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       893 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       894 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       895 = '/Chassis side right                 ', T= 0.000, A= 3.697917E-04, C= 1.4792E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint, EPS= EPS_White_Paint;
+  D       900 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       901 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       902 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       903 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       904 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       905 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       906 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       907 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       908 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       909 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       910 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       911 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       912 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       913 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       914 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       915 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       916 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       917 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       918 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       919 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       920 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       921 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       922 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       923 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       924 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       925 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       926 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       927 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       928 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       929 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       930 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       931 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       932 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       933 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       934 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       935 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       936 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       937 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       938 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       939 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       940 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       941 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       942 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       943 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       944 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       945 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       946 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       947 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       948 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       949 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       950 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       951 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       952 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       953 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       954 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       955 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       956 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       957 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       958 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       959 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       960 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       961 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       962 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       963 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       964 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       965 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       966 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       967 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       968 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       969 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       970 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       971 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       972 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       973 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       974 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       975 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       976 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       977 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       978 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       979 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       980 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       981 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       982 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       983 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       984 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       985 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       986 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       987 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       988 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       989 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       990 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       991 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       992 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       993 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       994 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D       995 = '/Chassis top                        ', T= 0.000, A= 8.875000E-04, C= 2.6625E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM        , EPS= EPS_SSM        ;
+  D      1000 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1001 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1002 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1003 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1004 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1005 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1006 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1007 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1008 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1009 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1010 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1011 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1012 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1013 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1014 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1015 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1016 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1017 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1018 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1019 = '/Chassis propeller support left     ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1100 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1101 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1102 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1103 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1104 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1105 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1106 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1107 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1108 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1109 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1110 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1111 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1112 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1113 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1114 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1115 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1116 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1117 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1118 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1119 = '/Chassis propeller support right    ', T= 0.000, A= 7.500000E-04, C= 3.0000E-06*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      1200 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1201 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1202 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1203 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1204 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1205 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1206 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1207 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1208 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1209 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1210 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1211 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1212 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1213 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1214 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1215 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1216 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1217 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1218 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1219 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1220 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1221 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1222 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1223 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1224 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1225 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1226 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1227 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1228 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1229 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1230 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1231 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1232 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1233 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1234 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1235 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1236 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1237 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1238 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1239 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1240 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1241 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1242 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1243 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1244 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1245 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1246 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1247 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1248 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1249 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1250 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1251 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1252 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1253 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1254 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1255 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1256 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1257 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1258 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1259 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1260 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1261 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1262 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1263 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1264 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3313E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1265 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1266 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1267 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1268 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1269 = '/Solar panel center                 ', T= 0.000, A= 1.775000E-03, C= 1.3312E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500, EPS= 0.500*EPS_SunCell     + 0.500;
+  D      1300 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1301 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1302 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1303 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1304 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1305 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1306 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1307 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1308 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1309 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1310 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1311 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1312 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1313 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1314 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1315 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1316 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1317 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1318 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1319 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1320 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1321 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1322 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1323 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1324 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1325 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1326 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1327 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1328 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1329 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1330 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1331 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1332 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1333 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1334 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1335 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1336 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1337 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1338 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1339 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1340 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1341 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1342 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1343 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1344 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1345 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1346 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1347 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1348 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1349 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1350 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1351 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1352 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1353 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1354 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1355 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1356 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1357 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1358 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1359 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1360 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1361 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1362 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1363 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1364 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1365 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1366 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1367 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1368 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1369 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1370 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1371 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1372 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1373 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1374 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1375 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1376 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1377 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1378 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1379 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1380 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1381 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1382 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1383 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1384 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1385 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1386 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1387 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1388 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1389 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1390 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1391 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1392 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1393 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1394 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1395 = '/Solar panel left                   ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell     + 0.500*ALP_White_Paint, EPS= 0.500*EPS_SunCell     + 0.500*EPS_White_Paint;
+  D      1400 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1401 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1402 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1403 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1404 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1405 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1406 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1407 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1408 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1409 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1410 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1411 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1412 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1413 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1414 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1415 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1416 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1417 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1418 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1419 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1420 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1421 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1422 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1423 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1424 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1425 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1426 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1427 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1428 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1429 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1430 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1431 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1432 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1433 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1434 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1435 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1436 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1437 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1438 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1439 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1440 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1441 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1442 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1443 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1444 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1445 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1446 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1447 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1448 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1449 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1450 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1451 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1452 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1453 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1454 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1455 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1456 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1457 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1458 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1459 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1460 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1461 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1462 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1463 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1464 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1465 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1466 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1467 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1468 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1469 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1470 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1471 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1472 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1473 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1474 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1475 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1476 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1477 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1478 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1479 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1480 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1481 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1482 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1483 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1484 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1485 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1486 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1487 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1488 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1489 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1490 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1491 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1492 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1493 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1494 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1495 = '/Solar panel right                  ', T= 0.000, A= 1.131508E-03, C= 8.4863E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint + 0.500*ALP_SunCell    , EPS= 0.500*EPS_White_Paint + 0.500*EPS_SunCell    ;
+  D      1500 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1501 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1502 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1503 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1504 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1505 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1506 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1507 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1508 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1509 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1510 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1511 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1512 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1513 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1514 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1515 = '/Propeller side front               ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1600 = '/Propeller side left                ', T= 0.000, A= 2.880000E-02, C= 4.3200E-05*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1700 = '/Propeller side right               ', T= 0.000, A= 2.880000E-02, C= 4.3200E-05*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1800 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1801 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1802 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1803 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1804 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1805 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1806 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1807 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1808 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1809 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1810 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1811 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1812 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1813 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1814 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1815 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1816 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1817 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1818 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1819 = '/Propeller top                      ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1900 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1901 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1902 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1903 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1904 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1905 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1906 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1907 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1908 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1909 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1910 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1911 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1912 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1913 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1914 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1915 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1916 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1917 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1918 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1919 = '/Propeller bottom                   ', T= 0.000, A= 1.440000E-03, C= 2.1600E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2000 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2001 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2002 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2003 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2004 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2005 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2006 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2007 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2008 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2009 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2010 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2011 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2012 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2013 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2014 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2015 = '/Propeller side back                ', T= 0.000, A= 1.152000E-03, C= 1.7280E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      2100 = '/Band S front                       ', T= 0.000, A= 1.570796E-04, C= 2.3562E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2101 = '/Band S front                       ', T= 0.000, A= 4.712389E-04, C= 7.0686E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2102 = '/Band S front                       ', T= 0.000, A= 7.853982E-04, C= 1.1781E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2103 = '/Band S front                       ', T= 0.000, A= 1.099557E-03, C= 1.6493E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2104 = '/Band S front                       ', T= 0.000, A= 1.570796E-04, C= 2.3562E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2105 = '/Band S front                       ', T= 0.000, A= 4.712389E-04, C= 7.0686E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2106 = '/Band S front                       ', T= 0.000, A= 7.853982E-04, C= 1.1781E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2107 = '/Band S front                       ', T= 0.000, A= 1.099557E-03, C= 1.6493E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2108 = '/Band S front                       ', T= 0.000, A= 1.570796E-04, C= 2.3562E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2109 = '/Band S front                       ', T= 0.000, A= 4.712389E-04, C= 7.0686E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2110 = '/Band S front                       ', T= 0.000, A= 7.853982E-04, C= 1.1781E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2111 = '/Band S front                       ', T= 0.000, A= 1.099557E-03, C= 1.6493E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2112 = '/Band S front                       ', T= 0.000, A= 1.570796E-04, C= 2.3562E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2113 = '/Band S front                       ', T= 0.000, A= 4.712389E-04, C= 7.0686E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2114 = '/Band S front                       ', T= 0.000, A= 7.853982E-04, C= 1.1781E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2115 = '/Band S front                       ', T= 0.000, A= 1.099557E-03, C= 1.6493E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2200 = '/Band S bottom                      ', T= 0.000, A= 1.570796E-04, C= 2.3562E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2201 = '/Band S bottom                      ', T= 0.000, A= 4.712389E-04, C= 7.0686E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2202 = '/Band S bottom                      ', T= 0.000, A= 7.853982E-04, C= 1.1781E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2203 = '/Band S bottom                      ', T= 0.000, A= 1.099557E-03, C= 1.6493E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2204 = '/Band S bottom                      ', T= 0.000, A= 1.570796E-04, C= 2.3562E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2205 = '/Band S bottom                      ', T= 0.000, A= 4.712389E-04, C= 7.0686E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2206 = '/Band S bottom                      ', T= 0.000, A= 7.853982E-04, C= 1.1781E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2207 = '/Band S bottom                      ', T= 0.000, A= 1.099557E-03, C= 1.6493E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2208 = '/Band S bottom                      ', T= 0.000, A= 1.570796E-04, C= 2.3562E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2209 = '/Band S bottom                      ', T= 0.000, A= 4.712389E-04, C= 7.0686E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2210 = '/Band S bottom                      ', T= 0.000, A= 7.853982E-04, C= 1.1781E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2211 = '/Band S bottom                      ', T= 0.000, A= 1.099557E-03, C= 1.6493E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2212 = '/Band S bottom                      ', T= 0.000, A= 1.570796E-04, C= 2.3562E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2213 = '/Band S bottom                      ', T= 0.000, A= 4.712389E-04, C= 7.0686E-07*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2214 = '/Band S bottom                      ', T= 0.000, A= 7.853982E-04, C= 1.1781E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2215 = '/Band S bottom                      ', T= 0.000, A= 1.099557E-03, C= 1.6493E-06*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint, EPS= EPS_Black_Paint;
+  D      2300 = '/Batteries                          ', T= 0.000, A= 2.640000E-03, ALP= 1.000, EPS= 1.000;
+  D      2301 = '/Batteries                          ', T= 0.000, A= 2.640000E-03, ALP= 1.000, EPS= 1.000;
+  D      2302 = '/Batteries                          ', T= 0.000, A= 5.154512E-03, ALP= 1.000, EPS= 1.000;
+  D      2303 = '/Batteries                          ', T= 0.000, A= 5.154512E-03, ALP= 1.000, EPS= 1.000;
+  D      2304 = '/Batteries                          ', T= 0.000, A= 0.000000E+00, ALP= 0.000, EPS= 0.000;
+  D      2305 = '/Batteries                          ', T= 0.000, A= 1.757220E-03, ALP= 1.000, EPS= 1.000;
+  D      2306 = '/Batteries                          ', T= 0.000, C= 1.5464E-04*DENS_Aluminium_6061*CP_Aluminium_6061, VOLUM = 1.546E-04;      # Volumic node
+  D      2400 = '/Batteries                          ', T= 0.000, A= 2.640000E-03, ALP= 1.000, EPS= 1.000;
+  D      2401 = '/Batteries                          ', T= 0.000, A= 2.640000E-03, ALP= 1.000, EPS= 1.000;
+  D      2402 = '/Batteries                          ', T= 0.000, A= 5.154512E-03, ALP= 1.000, EPS= 1.000;
+  D      2403 = '/Batteries                          ', T= 0.000, A= 5.154512E-03, ALP= 1.000, EPS= 1.000;
+  D      2404 = '/Batteries                          ', T= 0.000, A= 0.000000E+00, ALP= 0.000, EPS= 0.000;
+  D      2405 = '/Batteries                          ', T= 0.000, A= 1.757220E-03, ALP= 1.000, EPS= 1.000;
+  D      2406 = '/Batteries                          ', T= 0.000, C= 1.5464E-04*DENS_Aluminium_6061*CP_Aluminium_6061, VOLUM = 1.546E-04;      # Volumic node
+  D      2500 = '/Transponder (1)                    ', T= 0.000, A= 2.200000E-03, ALP= 1.000, EPS= 1.000;
+  D      2501 = '/Transponder (1)                    ', T= 0.000, A= 2.200000E-03, ALP= 1.000, EPS= 1.000;
+  D      2502 = '/Transponder (1)                    ', T= 0.000, A= 6.882832E-03, ALP= 1.000, EPS= 1.000;
+  D      2503 = '/Transponder (1)                    ', T= 0.000, A= 6.882832E-03, ALP= 1.000, EPS= 1.000;
+  D      2504 = '/Transponder (1)                    ', T= 0.000, A= 0.000000E+00, ALP= 0.000, EPS= 0.000;
+  D      2505 = '/Transponder (1)                    ', T= 0.000, A= 1.955350E-03, ALP= 1.000, EPS= 1.000;
+  D      2506 = '/Transponder (1)                    ', T= 0.000, C= 1.7207E-04*DENS_Aluminium_6061*CP_Aluminium_6061, VOLUM = 1.721E-04;      # Volumic node
+  D      2600 = '/Printed Circuits                   ', T= 0.000, A= 3.080000E-03, ALP= 1.000, EPS= 1.000;
+  D      2601 = '/Printed Circuits                   ', T= 0.000, A= 3.080000E-03, ALP= 1.000, EPS= 1.000;
+  D      2602 = '/Printed Circuits                   ', T= 0.000, A= 7.700000E-03, ALP= 1.000, EPS= 1.000;
+  D      2603 = '/Printed Circuits                   ', T= 0.000, A= 7.700000E-03, ALP= 1.000, EPS= 1.000;
+  D      2604 = '/Printed Circuits                   ', T= 0.000, A= 0.000000E+00, ALP= 0.000, EPS= 0.000;
+  D      2605 = '/Printed Circuits                   ', T= 0.000, A= 3.062500E-03, ALP= 1.000, EPS= 1.000;
+  D      2606 = '/Printed Circuits                   ', T= 0.000, C= 2.6950E-04*DENS_Aluminium_6061*CP_Aluminium_6061, VOLUM = 2.695E-04;      # Volumic node
+  D      2700 = '/Powercard P60                      ', T= 0.000, A= 1.760000E-03, ALP= 1.000, EPS= 1.000;
+  D      2701 = '/Powercard P60                      ', T= 0.000, A= 1.760000E-03, ALP= 1.000, EPS= 1.000;
+  D      2702 = '/Powercard P60                      ', T= 0.000, A= 6.882832E-03, ALP= 1.000, EPS= 1.000;
+  D      2703 = '/Powercard P60                      ', T= 0.000, A= 6.882832E-03, ALP= 1.000, EPS= 1.000;
+  D      2704 = '/Powercard P60                      ', T= 0.000, A= 0.000000E+00, ALP= 0.000, EPS= 0.000;
+  D      2705 = '/Powercard P60                      ', T= 0.000, A= 1.564280E-03, ALP= 1.000, EPS= 1.000;
+  D      2706 = '/Powercard P60                      ', T= 0.000, C= 1.3766E-04*DENS_Aluminium_6061*CP_Aluminium_6061, VOLUM = 1.377E-04;      # Volumic node
+
+   # Sensor nodes
+
+   # Space (or environment) node
+  B  99999999 = 'Space Node', T= -269.000;
+
+
+
+
+$INITIAL
+
+      # Internal Dissipations :
+        # Band S dissipation
+        QI2100 = 1200 * A2100 / 2.0
+        QI2101 = 1200 * A2101 / 2.0
+        QI2102 = 1200 * A2102 / 2.0
+        QI2103 = 1200 * A2103 / 2.0
+        QI2104 = 1200 * A2104 / 2.0
+        QI2105 = 1200 * A2105 / 2.0
+        QI2106 = 1200 * A2106 / 2.0
+        QI2107 = 1200 * A2107 / 2.0
+        QI2108 = 1200 * A2108 / 2.0
+        QI2109 = 1200 * A2109 / 2.0
+        QI2110 = 1200 * A2110 / 2.0
+        QI2111 = 1200 * A2111 / 2.0
+        QI2112 = 1200 * A2112 / 2.0
+        QI2113 = 1200 * A2113 / 2.0
+        QI2114 = 1200 * A2114 / 2.0
+        QI2115 = 1200 * A2115 / 2.0
+        QI2200 = 1200 * A2200 / 2.0
+        QI2201 = 1200 * A2201 / 2.0
+        QI2202 = 1200 * A2202 / 2.0
+        QI2203 = 1200 * A2203 / 2.0
+        QI2204 = 1200 * A2204 / 2.0
+        QI2205 = 1200 * A2205 / 2.0
+        QI2206 = 1200 * A2206 / 2.0
+        QI2207 = 1200 * A2207 / 2.0
+        QI2208 = 1200 * A2208 / 2.0
+        QI2209 = 1200 * A2209 / 2.0
+        QI2210 = 1200 * A2210 / 2.0
+        QI2211 = 1200 * A2211 / 2.0
+        QI2212 = 1200 * A2212 / 2.0
+        QI2213 = 1200 * A2213 / 2.0
+        QI2214 = 1200 * A2214 / 2.0
+        QI2215 = 1200 * A2215 / 2.0
+        # Battery dissipation
+        QI2306 = 2
+        QI2406 = 2
+        # Circuitsl Dissipation
+        QI2606 = 2
+        QI2506 = 2
+        QI2706 = 2
+$VTIME
+
+      # Internal Dissipations :
+        # Propeller dissipation
+        QI1000 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1000
+        QI1001 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1001
+        QI1002 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1002
+        QI1003 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1003
+        QI1004 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1004
+        QI1005 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1005
+        QI1006 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1006
+        QI1007 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1007
+        QI1008 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1008
+        QI1009 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1009
+        QI1010 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1010
+        QI1011 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1011
+        QI1012 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1012
+        QI1013 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1013
+        QI1014 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1014
+        QI1015 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1015
+        QI1016 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1016
+        QI1017 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1017
+        QI1018 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1018
+        QI1019 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1019
+        QI1100 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1100
+        QI1101 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1101
+        QI1102 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1102
+        QI1103 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1103
+        QI1104 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1104
+        QI1105 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1105
+        QI1106 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1106
+        QI1107 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1107
+        QI1108 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1108
+        QI1109 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1109
+        QI1110 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1110
+        QI1111 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1111
+        QI1112 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1112
+        QI1113 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1113
+        QI1114 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1114
+        QI1115 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1115
+        QI1116 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1116
+        QI1117 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1117
+        QI1118 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1118
+        QI1119 = INTRP1(TIMEM, Propeller_dissipation, 1) * A1119
+        QI900 = INTRP1(TIMEM, Propeller_dissipation, 1) * A900
+        QI901 = INTRP1(TIMEM, Propeller_dissipation, 1) * A901
+        QI902 = INTRP1(TIMEM, Propeller_dissipation, 1) * A902
+        QI903 = INTRP1(TIMEM, Propeller_dissipation, 1) * A903
+        QI904 = INTRP1(TIMEM, Propeller_dissipation, 1) * A904
+        QI905 = INTRP1(TIMEM, Propeller_dissipation, 1) * A905
+        QI906 = INTRP1(TIMEM, Propeller_dissipation, 1) * A906
+        QI907 = INTRP1(TIMEM, Propeller_dissipation, 1) * A907
+        QI908 = INTRP1(TIMEM, Propeller_dissipation, 1) * A908
+        QI909 = INTRP1(TIMEM, Propeller_dissipation, 1) * A909
+        QI910 = INTRP1(TIMEM, Propeller_dissipation, 1) * A910
+        QI911 = INTRP1(TIMEM, Propeller_dissipation, 1) * A911
+        QI912 = INTRP1(TIMEM, Propeller_dissipation, 1) * A912
+        QI913 = INTRP1(TIMEM, Propeller_dissipation, 1) * A913
+        QI914 = INTRP1(TIMEM, Propeller_dissipation, 1) * A914
+        QI915 = INTRP1(TIMEM, Propeller_dissipation, 1) * A915
+        QI916 = INTRP1(TIMEM, Propeller_dissipation, 1) * A916
+        QI917 = INTRP1(TIMEM, Propeller_dissipation, 1) * A917
+        QI918 = INTRP1(TIMEM, Propeller_dissipation, 1) * A918
+        QI919 = INTRP1(TIMEM, Propeller_dissipation, 1) * A919
+        QI920 = INTRP1(TIMEM, Propeller_dissipation, 1) * A920
+        QI921 = INTRP1(TIMEM, Propeller_dissipation, 1) * A921
+        QI922 = INTRP1(TIMEM, Propeller_dissipation, 1) * A922
+        QI923 = INTRP1(TIMEM, Propeller_dissipation, 1) * A923
+        QI924 = INTRP1(TIMEM, Propeller_dissipation, 1) * A924
+        QI925 = INTRP1(TIMEM, Propeller_dissipation, 1) * A925
+        QI926 = INTRP1(TIMEM, Propeller_dissipation, 1) * A926
+        QI927 = INTRP1(TIMEM, Propeller_dissipation, 1) * A927
+        QI928 = INTRP1(TIMEM, Propeller_dissipation, 1) * A928
+        QI929 = INTRP1(TIMEM, Propeller_dissipation, 1) * A929
+        QI930 = INTRP1(TIMEM, Propeller_dissipation, 1) * A930
+        QI931 = INTRP1(TIMEM, Propeller_dissipation, 1) * A931
+        QI932 = INTRP1(TIMEM, Propeller_dissipation, 1) * A932
+        QI933 = INTRP1(TIMEM, Propeller_dissipation, 1) * A933
+        QI934 = INTRP1(TIMEM, Propeller_dissipation, 1) * A934
+        QI935 = INTRP1(TIMEM, Propeller_dissipation, 1) * A935
+        QI936 = INTRP1(TIMEM, Propeller_dissipation, 1) * A936
+        QI937 = INTRP1(TIMEM, Propeller_dissipation, 1) * A937
+        QI938 = INTRP1(TIMEM, Propeller_dissipation, 1) * A938
+        QI939 = INTRP1(TIMEM, Propeller_dissipation, 1) * A939
+        QI940 = INTRP1(TIMEM, Propeller_dissipation, 1) * A940
+        QI941 = INTRP1(TIMEM, Propeller_dissipation, 1) * A941
+        QI942 = INTRP1(TIMEM, Propeller_dissipation, 1) * A942
+        QI943 = INTRP1(TIMEM, Propeller_dissipation, 1) * A943
+        QI944 = INTRP1(TIMEM, Propeller_dissipation, 1) * A944
+        QI945 = INTRP1(TIMEM, Propeller_dissipation, 1) * A945
+        QI946 = INTRP1(TIMEM, Propeller_dissipation, 1) * A946
+        QI947 = INTRP1(TIMEM, Propeller_dissipation, 1) * A947
+        QI948 = INTRP1(TIMEM, Propeller_dissipation, 1) * A948
+        QI949 = INTRP1(TIMEM, Propeller_dissipation, 1) * A949
+        QI950 = INTRP1(TIMEM, Propeller_dissipation, 1) * A950
+        QI951 = INTRP1(TIMEM, Propeller_dissipation, 1) * A951
+        QI952 = INTRP1(TIMEM, Propeller_dissipation, 1) * A952
+        QI953 = INTRP1(TIMEM, Propeller_dissipation, 1) * A953
+        QI954 = INTRP1(TIMEM, Propeller_dissipation, 1) * A954
+        QI955 = INTRP1(TIMEM, Propeller_dissipation, 1) * A955
+        QI956 = INTRP1(TIMEM, Propeller_dissipation, 1) * A956
+        QI957 = INTRP1(TIMEM, Propeller_dissipation, 1) * A957
+        QI958 = INTRP1(TIMEM, Propeller_dissipation, 1) * A958
+        QI959 = INTRP1(TIMEM, Propeller_dissipation, 1) * A959
+        QI960 = INTRP1(TIMEM, Propeller_dissipation, 1) * A960
+        QI961 = INTRP1(TIMEM, Propeller_dissipation, 1) * A961
+        QI962 = INTRP1(TIMEM, Propeller_dissipation, 1) * A962
+        QI963 = INTRP1(TIMEM, Propeller_dissipation, 1) * A963
+        QI964 = INTRP1(TIMEM, Propeller_dissipation, 1) * A964
+        QI965 = INTRP1(TIMEM, Propeller_dissipation, 1) * A965
+        QI966 = INTRP1(TIMEM, Propeller_dissipation, 1) * A966
+        QI967 = INTRP1(TIMEM, Propeller_dissipation, 1) * A967
+        QI968 = INTRP1(TIMEM, Propeller_dissipation, 1) * A968
+        QI969 = INTRP1(TIMEM, Propeller_dissipation, 1) * A969
+        QI970 = INTRP1(TIMEM, Propeller_dissipation, 1) * A970
+        QI971 = INTRP1(TIMEM, Propeller_dissipation, 1) * A971
+        QI972 = INTRP1(TIMEM, Propeller_dissipation, 1) * A972
+        QI973 = INTRP1(TIMEM, Propeller_dissipation, 1) * A973
+        QI974 = INTRP1(TIMEM, Propeller_dissipation, 1) * A974
+        QI975 = INTRP1(TIMEM, Propeller_dissipation, 1) * A975
+        QI976 = INTRP1(TIMEM, Propeller_dissipation, 1) * A976
+        QI977 = INTRP1(TIMEM, Propeller_dissipation, 1) * A977
+        QI978 = INTRP1(TIMEM, Propeller_dissipation, 1) * A978
+        QI979 = INTRP1(TIMEM, Propeller_dissipation, 1) * A979
+        QI980 = INTRP1(TIMEM, Propeller_dissipation, 1) * A980
+        QI981 = INTRP1(TIMEM, Propeller_dissipation, 1) * A981
+        QI982 = INTRP1(TIMEM, Propeller_dissipation, 1) * A982
+        QI983 = INTRP1(TIMEM, Propeller_dissipation, 1) * A983
+        QI984 = INTRP1(TIMEM, Propeller_dissipation, 1) * A984
+        QI985 = INTRP1(TIMEM, Propeller_dissipation, 1) * A985
+        QI986 = INTRP1(TIMEM, Propeller_dissipation, 1) * A986
+        QI987 = INTRP1(TIMEM, Propeller_dissipation, 1) * A987
+        QI988 = INTRP1(TIMEM, Propeller_dissipation, 1) * A988
+        QI989 = INTRP1(TIMEM, Propeller_dissipation, 1) * A989
+        QI990 = INTRP1(TIMEM, Propeller_dissipation, 1) * A990
+        QI991 = INTRP1(TIMEM, Propeller_dissipation, 1) * A991
+        QI992 = INTRP1(TIMEM, Propeller_dissipation, 1) * A992
+        QI993 = INTRP1(TIMEM, Propeller_dissipation, 1) * A993
+        QI994 = INTRP1(TIMEM, Propeller_dissipation, 1) * A994
+        QI995 = INTRP1(TIMEM, Propeller_dissipation, 1) * A995
+
+
+$CONDUCTORS
+   # Surface contacts
+      GL( 106 , 2604 )	=   1.054E-01;   #Surface Contact
+      GL( 107 , 2604 )	=   1.406E-01;   #Surface Contact
+      GL( 114 , 2604 )	=   1.054E-01;   #Surface Contact
+      GL( 115 , 2604 )	=   1.406E-01;   #Surface Contact
+      GL( 122 , 2604 )	=   1.033E-01;   #Surface Contact
+      GL( 123 , 2604 )	=   1.378E-01;   #Surface Contact
+      GL( 129 , 2704 )	=   9.559E-02;   #Surface Contact
+      GL( 130 , 2504 )	=   1.195E-01;   #Surface Contact
+      GL( 133 , 2404 )	=   8.434E-02;   #Surface Contact
+      GL( 134 , 2304 )	=   3.514E-02;   #Surface Contact
+      GL( 134 , 2404 )	=   1.265E-01;   #Surface Contact
+      GL( 135 , 2304 )	=   1.757E-01;   #Surface Contact
+      GL( 137 , 2704 )	=   1.406E-01;   #Surface Contact
+      GL( 138 , 2504 )	=   1.757E-01;   #Surface Contact
+      GL( 141 , 2404 )	=   8.434E-02;   #Surface Contact
+      GL( 142 , 2304 )	=   3.514E-02;   #Surface Contact
+      GL( 142 , 2404 )	=   1.265E-01;   #Surface Contact
+      GL( 143 , 2304 )	=   1.757E-01;   #Surface Contact
+      GL( 145 , 2704 )	=   1.406E-01;   #Surface Contact
+      GL( 146 , 2504 )	=   1.757E-01;   #Surface Contact
+
+$CONTROLS
+   DATE50 = 2.556700E+04;
+   PERIOD = 4.344000E+04;
+
+
+$EVENTS
+
+   $TIMESTEP
+   $OUTPUT
+      # Earth_PenumbraIN_1   =  0.000000E+00 [PERIOD];
+      # Earth_PenumbraOUT_1  =  1.784062E+03 [PERIOD];
+      # Earth_EclipseIN_2   =  0.000000E+00 [PERIOD];
+      # Earth_EclipseOUT_2  =  1.775625E+03 [PERIOD];
+      # Earth_PenumbraIN_3   =  5.043935E+03 [PERIOD];
+      # Earth_PenumbraOUT_3  =  7.215185E+03 [PERIOD];
+      # Earth_EclipseIN_4   =  5.053310E+03 [PERIOD];
+      # Earth_EclipseOUT_4  =  7.206748E+03 [PERIOD];
+      # Earth_PenumbraIN_5   =  1.047600E+04 [PERIOD];
+      # Earth_PenumbraOUT_5  =  1.264725E+04 [PERIOD];
+      # Earth_EclipseIN_6   =  1.048443E+04 [PERIOD];
+      # Earth_EclipseOUT_6  =  1.263787E+04 [PERIOD];
+      # Earth_PenumbraIN_7   =  1.590806E+04 [PERIOD];
+      # Earth_PenumbraOUT_7  =  1.807837E+04 [PERIOD];
+      # Earth_EclipseIN_8   =  1.591649E+04 [PERIOD];
+      # Earth_EclipseOUT_8  =  1.806899E+04 [PERIOD];
+      # Earth_PenumbraIN_9   =  2.134012E+04 [PERIOD];
+      # Earth_PenumbraOUT_9  =  2.350949E+04 [PERIOD];
+      # Earth_EclipseIN_10   =  2.134855E+04 [PERIOD];
+      # Earth_EclipseOUT_10  =  2.350105E+04 [PERIOD];
+      # Earth_PenumbraIN_11   =  2.677218E+04 [PERIOD];
+      # Earth_PenumbraOUT_11  =  2.894061E+04 [PERIOD];
+      # Earth_EclipseIN_12   =  2.678061E+04 [PERIOD];
+      # Earth_EclipseOUT_12  =  2.893218E+04 [PERIOD];
+      # Earth_PenumbraIN_13   =  3.220424E+04 [PERIOD];
+      # Earth_PenumbraOUT_13  =  3.437268E+04 [PERIOD];
+      # Earth_EclipseIN_14   =  3.221268E+04 [PERIOD];
+      # Earth_EclipseOUT_14  =  3.436330E+04 [PERIOD];
+      # Earth_PenumbraIN_15   =  3.763630E+04 [PERIOD];
+      # Earth_PenumbraOUT_15  =  3.980380E+04 [PERIOD];
+      # Earth_EclipseIN_16   =  3.764474E+04 [PERIOD];
+      # Earth_EclipseOUT_16  =  3.979536E+04 [PERIOD];
+      # Earth_PenumbraIN_17   =  4.306836E+04 [PERIOD];
+      # Earth_PenumbraOUT_17  =  4.344000E+04 [PERIOD];
+      # Earth_EclipseIN_18   =  4.307680E+04 [PERIOD];
+      # Earth_EclipseOUT_18  =  4.344000E+04 [PERIOD];
+
+
+$ARRAYS
+   CHARACTER* SEQNAME(1) = 'Default';
+
+   REAL* SEQNB(2,*) =
+       0.000000E+00,  1;

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="TRAJECTORY" SAVEDATE="1606927112" SYSTEMA_VERSION="4.8.3P1">
+    <DATA_STRUCTURE NAME="ionsat_deployed_3.1.systrj" REFSET_ID="{4f29209b-53a4-404f-8165-68085d8404bf}">
+        <DATA_NODE TYPE="TRAJECTORY_DN" REFOBJ_ID="2" NAME="Trajectory">
+            <DATA_NODE TYPE="GENERIC_NODE" REFOBJ_ID="3" NAME="Arcs">
+                <DATA_NODE TYPE="ARC_DN" REFOBJ_ID="5" NAME="New General keplerian">
+                    <NODE_ATTRIBUTE TYPE="INTERVAL_ATT" NAME="INTERVAL">
+                        <ELEM TYPE="SYS_INTERVAL_ELEM">
+                            <ELEM TYPE="DNLINK" REFOBJ_ID="0" REFSET_ID="INVALID" SELF="true"/>
+                            <ELEM TYPE="STRING" NAME="EVENT_IN" STR="EVENT_IN"/>
+                            <ELEM TYPE="DNLINK" REFOBJ_ID="0" REFSET_ID="INVALID" SELF="true"/>
+                            <ELEM TYPE="STRING" NAME="EVENT_OUT" STR="EVENT_OUT"/>
+                            <ELEM TYPE="STRING" STR="Arcs"/>
+                            <ELEM TYPE="STRING" STR="Arc"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="ORBIT_ATT" NAME="ORBIT">
+                        <ELEM ORBITTYPE="General keplerian" TYPE="ORBIT_ELEM" NAME="keplerian">
+                            <ELEM TYPE="VALUE" NAME="Semi major axis" VALUE="6678"/>
+                            <ELEM TYPE="VALUE" NAME="Excentricity" VALUE="0"/>
+                            <ELEM TYPE="VALUE" NAME="Periapsis" VALUE="0"/>
+                            <ELEM TYPE="VALUE" NAME="Apoapsis" VALUE="0"/>
+                            <ELEM TYPE="STRING" NAME="Ellipse definition" STR="Semi major axis &amp; excentricity"/>
+                            <ELEM TYPE="VALUE" NAME="Inclination" VALUE="51.4"/>
+                            <ELEM TYPE="STRING" NAME="Ascending node definition" STR="East longitude in inertial Gamma50 frame"/>
+                            <ELEM TYPE="VALUE" NAME="Ascending node longitude" VALUE="0"/>
+                            <ELEM HOUR="0" TYPE="HOUR" NAME="Ascending node solar time"/>
+                            <ELEM TYPE="VALUE" NAME="Argument of the periapsis" VALUE="0"/>
+                            <ELEM TYPE="STRING" NAME="Anomaly type" STR="True anomaly"/>
+                            <ELEM TYPE="VALUE" NAME="Anomaly" VALUE="0"/>
+                            <ELEM TYPE="DATE" DateTYPE="DATE_WRAPPER" NAME="Time">
+                                <ELEM TYPE="DATE" DateTYPE="CALENDAR" NAME="Time">
+                                    <ELEM TYPE="INTEGER" NAME="Day" VALUE="18"/>
+                                    <ELEM TYPE="INTEGER" NAME="Month" VALUE="3"/>
+                                    <ELEM TYPE="INTEGER" NAME="Year" VALUE="2020"/>
+                                    <ELEM TYPE="INTEGER" NAME="Hour" VALUE="0"/>
+                                    <ELEM TYPE="INTEGER" NAME="Min" VALUE="0"/>
+                                    <ELEM TYPE="VALUE" NAME="Sec" VALUE="0"/>
+                                </ELEM>
+                            </ELEM>
+                            <ELEM TYPE="STRING" NAME="Orbit reference" STR="Earth"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="EVENT_ATT" NAME="EVENT_IN">
+                        <ELEM TYPE="EVENT_ELEM">
+                            <ELEM TYPE="DATE" DateTYPE="DATE_WRAPPER" NAME="Start">
+                                <ELEM TYPE="DATE" DateTYPE="CALENDAR" NAME="Start">
+                                    <ELEM TYPE="INTEGER" NAME="Day" VALUE="1"/>
+                                    <ELEM TYPE="INTEGER" NAME="Month" VALUE="1"/>
+                                    <ELEM TYPE="INTEGER" NAME="Year" VALUE="2020"/>
+                                    <ELEM TYPE="INTEGER" NAME="Hour" VALUE="0"/>
+                                    <ELEM TYPE="INTEGER" NAME="Min" VALUE="0"/>
+                                    <ELEM TYPE="VALUE" NAME="Sec" VALUE="0"/>
+                                </ELEM>
+                            </ELEM>
+                            <ELEM TYPE="DNLINK" REFOBJ_ID="0" REFSET_ID="INVALID" SELF="true"/>
+                            <ELEM TYPE="STRING" STR="Arcs"/>
+                            <ELEM TYPE="STRING" STR="Arc"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                    <NODE_ATTRIBUTE TYPE="EVENT_ATT" NAME="EVENT_OUT">
+                        <ELEM TYPE="EVENT_ELEM">
+                            <ELEM TYPE="DATE" DateTYPE="DATE_WRAPPER" NAME="End">
+                                <ELEM TYPE="DATE" DateTYPE="Revolution" NAME="new date out">
+                                    <ELEM TYPE="DNLINK" REFOBJ_ID="0" NAME="Arc reference" REFSET_ID="INVALID" SELF="true"/>
+                                    <ELEM TYPE="VALUE" NAME="Revolution" VALUE="8"/>
+                                </ELEM>
+                            </ELEM>
+                            <ELEM TYPE="DNLINK" REFOBJ_ID="0" REFSET_ID="INVALID" SELF="true"/>
+                            <ELEM TYPE="STRING" STR="Arcs"/>
+                            <ELEM TYPE="STRING" STR="Arc"/>
+                        </ELEM>
+                    </NODE_ATTRIBUTE>
+                </DATA_NODE>
+            </DATA_NODE>
+            <NODE_ATTRIBUTE TYPE="TRAJECTORY_ATT" NAME="TRAJECTORY">
+                <ELEM TYPE="TRAJECTORY_ELEM">
+                    <ELEM TYPE="STRING" NAME="PLANET" STR="Earth"/>
+                </ELEM>
+            </NODE_ATTRIBUTE>
+        </DATA_NODE>
+    </DATA_STRUCTURE>
+</SYSML>

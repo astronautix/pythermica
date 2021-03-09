@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<SYSML SYSML_VERSION="1.7" CONTENTS="PROCESS_PARAMETERS" SAVEDATE="1606926917" SYSTEMA_VERSION="4.8.3P1">
+    <PROCESS_PARAMETERS PROCESS_NAME="Skeleton" APP_NAME="Thermisol">
+        <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+            <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS">
+                <ELEM TYPE="PROC_CATEGORY" ID="Format">
+                    <ELEM TYPE="STRING" ID="syntax_type" STR="New"/>
+                    <ELEM TYPE="STRING" ID="ModelName" STR="-"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="T Init">
+                    <ELEM TYPE="STRING" ID="tinit" STR="None"/>
+                    <ELEM TYPE="VALUE" ID="tinit_time" VALUE="-1"/>
+                    <ELEM TYPE="INTEGER" ID="nbtinits" VALUE="1"/>
+                    <ELEM TYPE="STRING" ID="init1nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="init1val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="init2nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="init2val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="init3nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="init3val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="init4nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="init4val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="init5nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="init5val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="init6nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="init6val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="init7nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="init7val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="init8nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="init8val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="init9nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="init9val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="init10nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="init10val" VALUE="0"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Steady-State">
+                    <ELEM TYPE="STRING" ID="steady" STR="Yes"/>
+                    <ELEM TYPE="STRING" ID="st_routine" STR="SOLVIT"/>
+                    <ELEM TYPE="VALUE" ID="st_relxca" VALUE="0.0001"/>
+                    <ELEM TYPE="VALUE" ID="st_inbala" VALUE="1000"/>
+                    <ELEM TYPE="VALUE" ID="st_inbalr" VALUE="100"/>
+                    <ELEM TYPE="INTEGER" ID="st_nloop" VALUE="10000"/>
+                    <ELEM TYPE="VALUE" ID="st_urelxca" VALUE="0.0001"/>
+                    <ELEM TYPE="VALUE" ID="st_inbali" VALUE="0.0001"/>
+                    <ELEM TYPE="INTEGER" ID="st_unloop" VALUE="10000"/>
+                    <ELEM TYPE="VALUE" ID="st_cmpeps" VALUE="0.0001"/>
+                    <ELEM TYPE="INTEGER" ID="st_cmpnloop" VALUE="10"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Transient">
+                    <ELEM TYPE="STRING" ID="transient" STR="Yes"/>
+                    <ELEM TYPE="STRING" ID="tr_routine" STR="SCRANK"/>
+                    <ELEM TYPE="VALUE" ID="errmin" VALUE="0.01"/>
+                    <ELEM TYPE="VALUE" ID="errmax" VALUE="0.01"/>
+                    <ELEM TYPE="VALUE" ID="tr_relxca" VALUE="0.0001"/>
+                    <ELEM TYPE="VALUE" ID="tr_inbalt" VALUE="1000"/>
+                    <ELEM TYPE="INTEGER" ID="tr_nloop" VALUE="1000"/>
+                    <ELEM TYPE="VALUE" ID="tr_urelxca" VALUE="0.0001"/>
+                    <ELEM TYPE="VALUE" ID="tr_inbali" VALUE="0.0001"/>
+                    <ELEM TYPE="INTEGER" ID="tr_unloop" VALUE="1000"/>
+                    <ELEM TYPE="VALUE" ID="tr_cmpeps" VALUE="0.0001"/>
+                    <ELEM TYPE="INTEGER" ID="tr_cmpnloop" VALUE="10"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Time options">
+                    <ELEM TYPE="STRING" ID="time_or_nborbits" STR="Number of orbits"/>
+                    <ELEM TYPE="VALUE" ID="timeo" VALUE="0"/>
+                    <ELEM TYPE="VALUE" ID="timend" VALUE="1000"/>
+                    <ELEM TYPE="INTEGER" ID="nborbit" VALUE="1"/>
+                    <ELEM TYPE="STRING" ID="orbitperiod" STR="PERIOD"/>
+                    <ELEM TYPE="INTEGER" ID="OutputDef" VALUE="1"/>
+                    <ELEM TYPE="VALUE" ID="dtimei" VALUE="10"/>
+                    <ELEM TYPE="VALUE" ID="udtimei" VALUE="10"/>
+                    <ELEM TYPE="VALUE" ID="udtmin" VALUE="1"/>
+                    <ELEM TYPE="INTEGER" ID="cycmax" VALUE="10"/>
+                    <ELEM TYPE="INTEGER" ID="nbspecs" VALUE="1"/>
+                    <ELEM TYPE="STRING" ID="spec1nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="spec1val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="spec2nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="spec2val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="spec3nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="spec3val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="spec4nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="spec4val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="spec5nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="spec5val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="spec6nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="spec6val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="spec7nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="spec7val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="spec8nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="spec8val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="spec9nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="spec9val" VALUE="0"/>
+                    <ELEM TYPE="STRING" ID="spec10nod" STR=""/>
+                    <ELEM TYPE="VALUE" ID="spec10val" VALUE="0"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Text output">
+                    <ELEM TYPE="VALUE" ID="outint" VALUE="0"/>
+                    <ELEM TYPE="INTEGER" ID="csv_freq" VALUE="10"/>
+                    <ELEM TYPE="STRING" ID="prndtb" STR="Yes"/>
+                    <ELEM TYPE="STRING" ID="prqbal" STR="No"/>
+                    <ELEM TYPE="STRING" ID="uiprint" STR="No"/>
+                </ELEM>
+                <ELEM TYPE="PROC_CATEGORY" ID="Hdf5 output">
+                    <ELEM TYPE="INTEGER" ID="h5_freq1" VALUE="4"/>
+                    <ELEM TYPE="STRING" ID="h5_var" STR="NONE"/>
+                    <ELEM TYPE="STRING" ID="h5_ns" STR="F0"/>
+                    <ELEM TYPE="STRING" ID="h5_a" STR="F0"/>
+                    <ELEM TYPE="STRING" ID="h5_c" STR="F0"/>
+                    <ELEM TYPE="STRING" ID="h5_alp" STR="F0"/>
+                    <ELEM TYPE="STRING" ID="h5_eps" STR="F0"/>
+                    <ELEM TYPE="STRING" ID="h5_gl" STR="F0"/>
+                    <ELEM TYPE="STRING" ID="h5_gr" STR="F0"/>
+                    <ELEM TYPE="STRING" ID="h5_gf" STR="F0"/>
+                    <ELEM TYPE="STRING" ID="h5_t" STR="F1"/>
+                    <ELEM TYPE="STRING" ID="h5_qs" STR="F1"/>
+                    <ELEM TYPE="STRING" ID="h5_qa" STR="F1"/>
+                    <ELEM TYPE="STRING" ID="h5_qe" STR="F1"/>
+                    <ELEM TYPE="STRING" ID="h5_qi" STR="F1"/>
+                    <ELEM TYPE="STRING" ID="h5_qr" STR="F1"/>
+                </ELEM>
+            </ELEM>
+        </NODE_ATTRIBUTE>
+        <NODE_ATTRIBUTE TYPE="RUN PARAMETERS" NAME="RUN PARAMETERS">
+            <ELEM TYPE="RUN_PARAMETERS" ID="RUN_PARAMETERS"/>
+        </NODE_ATTRIBUTE>
+    </PROCESS_PARAMETERS>
+</SYSML>
