@@ -91,7 +91,18 @@ class Thermica():
     def get_temperature(self):
         fname = self.get_temperature_file()
 
-        return self.read_groupe_subgroup( filename=fname, groupname="Results", subgroup="Thermal", datasetname="Temperatures" )
+        return self.read_groupe_subgroup( filename=fname,
+                                          groupname="Results",
+                                          subgroup="Thermal",
+                                          datasetname="Temperatures" )
+
+    def get_internal_dissipation(self) :
+        """return the value in W of the internal dissiabation for each node (each mesh cell)"""
+
+        fname = self.get_temperature_file()
+
+        return self.read_groupe_subgroup(filename=fname, groupname="Results", subgroup="Thermal",
+                                         datasetname="Internal dissipations")
 
     def read_temperature2(self, groupname, datasetname ):
         """Open the temperature h5 file, but access the dataset with only one groupe of hyerachi"""

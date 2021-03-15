@@ -10,7 +10,7 @@ path = "./ionsat_deployed_ver3.1/ionsat_deployed_3.1_ionsat_deployed_3.1/"
 therm_results = Thermica(path)
 
 time_temperature = therm_results.return_time_temperature()
-temperatures = therm_results.read_temperature("Results", "Thermal", "Temperatures" )
+temperatures = therm_results.read_temperature( )
 
 fg, axarr = plt.subplots(4,6, figsize=(8,3))
 
