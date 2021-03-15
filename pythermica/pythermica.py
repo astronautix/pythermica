@@ -66,6 +66,12 @@ class Thermica():
 
         return filename
 
+    def dump_result_file_structure(self):
+        """print the file data structure"""
+        from .hdf5_process import h5dump
+        fname = self.get_temperature_file()
+        h5dump(fname)
+
     def read_solarflux(self, groupname, datasetname ):
         solarfluxname = self.get_solarflux_file()
 
@@ -74,13 +80,18 @@ class Thermica():
 
         return value
 
-    def read_temperature(self, groupname, subgroup, datasetname ):
-        solarfluxname = self.get_temperature_file()
+    def read_groupe_subgroup(self, filename, groupname, subgroup, datasetname ):
 
-        with hp.File(solarfluxname, "r") as h5file:
+
+        with hp.File(filename, "r") as h5file:
             value = h5file[groupname][subgroup][datasetname][()]
 
         return value
+
+    def get_temperature(self):
+        fname = self.get_temperature_file()
+
+        return self.read_groupe_subgroup( filename=fname, groupname="Results", subgroup="Thermal", datasetname="Temperatures" )
 
     def read_temperature2(self, groupname, datasetname ):
         """Open the temperature h5 file, but access the dataset with only one groupe of hyerachi"""
