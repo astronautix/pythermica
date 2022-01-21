@@ -1,0 +1,218 @@
+
+#**********************************************#
+#                                              #
+#     Nodal Description created by Thermica    #
+#                                              #
+#**********************************************#
+
+$INFOS
+
+#  Nodal description
+#  --------------------
+#
+#  File : ionsat_deployed_4.WINTER.HC.1.nod.nwk
+#  Version : Thermica  V.4.9.1 released on September 2021
+#  Executed on : Wed Jan 12 16:32:26 2022
+#  Input files :
+#    - Sysset : ionsat_deployed_4.WINTER.HC.1.sysset
+
+$GLOBAL
+   $LOCALS
+      # Aluminium_2024
+      REAL COND_Aluminium_2024 = 120.00;
+      REAL DENS_Aluminium_2024 = 2770.00;
+      REAL CP_Aluminium_2024   = 920.00;
+      # White_Paint
+      REAL EPS_White_Paint  = 0.810;
+      REAL ALP_White_Paint  = 0.250;
+      # SSM
+      REAL EPS_SSM  = 0.780;
+      REAL ALP_SSM  = 0.230;
+      # Black_Paint
+      REAL EPS_Black_Paint  = 0.900;
+      REAL ALP_Black_Paint  = 0.950;
+      # Aluminium_6061
+      REAL COND_Aluminium_6061 = 167.00;
+      REAL DENS_Aluminium_6061 = 2700.00;
+      REAL CP_Aluminium_6061   = 940.00;
+      # SunCell
+      REAL EPS_SunCell  = 0.820;
+      REAL ALP_SunCell  = 0.740;
+      # Propeller_Front_Back_Side_ColdCase
+      REAL EPS_Propeller_Front_Back_Side_ColdCase  = 0.810;
+      REAL ALP_Propeller_Front_Back_Side_ColdCase  = 0.190;
+      # Aluminium_7075
+      REAL COND_Aluminium_7075 = 130.00;
+      REAL DENS_Aluminium_7075 = 2800.00;
+      REAL CP_Aluminium_7075   = 915.00;
+      # Propeller_sides_interiorofionsat
+      REAL EPS_Propeller_sides_interiorofionsat  = 0.100;
+      REAL ALP_Propeller_sides_interiorofionsat  = 0.900;
+      # Batteries_Plastic_coating
+      REAL EPS_Batteries_Plastic_coating  = 0.800;
+      REAL ALP_Batteries_Plastic_coating  = 0.900;
+      # PCBZ
+      REAL EPS_PCBZ  = 0.800;
+      REAL ALP_PCBZ  = 0.290;
+      # MLI
+      REAL COND_MLI = 0.00;
+      REAL DENS_MLI = 1700.00;
+      REAL CP_MLI   = 60.00;
+   $ARRAYS
+      REAL Propeller__Thruster(2, 9) =
+                 0.000, 0.0480,
+                 21600.000, 0.0480,
+                 21601.000, 220.0000,
+                 24300.000, 220.0000,
+                 24301.000, 0.0480,
+                 43200.000, 0.0480,
+                 43201.000, 220.0000,
+                 45900.000, 220.0000,
+                 45901.000, 220.0000;
+$ENDGLOBAL
+
+
+$ENTITIES
+   # Volumes
+  REAL* VOLUM;
+
+$NODES
+
+   # Geometrical Nodes
+  D       100 = '/Chassis bottom center              ', T= 0.000, A= 8.200000E-02, C= 1.6400E-04*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint                       , EPS= EPS_White_Paint                       ;
+  D       200 = '/Chassis bottom left                ', T= 0.000, A= 1.560000E-02, C= 3.1200E-05*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint                       , EPS= EPS_White_Paint                       ;
+  D       300 = '/Chassis bottom right               ', T= 0.000, A= 1.560000E-02, C= 3.1200E-05*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint                       , EPS= EPS_White_Paint                       ;
+  D       400 = '/Chassis side front                 ', T= 0.000, A= 4.000000E-02, C= 8.0000E-05*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint                       , EPS= EPS_White_Paint                       ;
+  D       500 = '/Chassis side back left             ', T= 0.000, A= 1.040000E-02, C= 2.0800E-05*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint                       , EPS= EPS_White_Paint                       ;
+  D       600 = '/Chassis side back right            ', T= 0.000, A= 1.040000E-02, C= 2.0800E-05*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint                       , EPS= EPS_White_Paint                       ;
+  D       700 = '/Chassis side left                  ', T= 0.000, A= 7.100000E-02, C= 1.4200E-04*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint                       , EPS= EPS_White_Paint                       ;
+  D       800 = '/Chassis side right                 ', T= 0.000, A= 7.100000E-02, C= 1.4200E-04*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_White_Paint                       , EPS= EPS_White_Paint                       ;
+  D       900 = '/Chassis top                        ', T= 0.000, A= 1.704000E-01, C= 2.5560E-04*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_SSM                               , EPS= EPS_SSM                               ;
+  D      1000 = '/Chassis propeller support left     ', T= 0.000, A= 1.500000E-02, C= 6.0000E-05*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint                       , EPS= EPS_Black_Paint                       ;
+  D      1100 = '/Chassis propeller support right    ', T= 0.000, A= 1.500000E-02, C= 6.0000E-05*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_Black_Paint                       , EPS= EPS_Black_Paint                       ;
+  D      1200 = '/Solar panel center                 ', T= 0.000, A= 1.242500E-01, C= 9.3187E-05*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell                            + 0.500, EPS= 0.500*EPS_SunCell                            + 0.500;
+  D      1300 = '/Solar panel left                   ', T= 0.000, A= 1.086248E-01, C= 8.1469E-05*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_SunCell                            + 0.500*ALP_White_Paint                       , EPS= 0.500*EPS_SunCell                            + 0.500*EPS_White_Paint                       ;
+  D      1400 = '/Solar panel right                  ', T= 0.000, A= 1.086248E-01, C= 8.1469E-05*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.500*ALP_White_Paint                        + 0.500*ALP_SunCell                           , EPS= 0.500*EPS_White_Paint                        + 0.500*EPS_SunCell                           ;
+  D      1500 = '/Propeller side front               ', T= 0.000, A= 0.000000E+00, C= 2.7648E-05*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= 0.000, EPS= 0.000;
+  D      1600 = '/Propeller side left                ', T= 0.000, A= 2.880000E-02, C= 4.3200E-05*DENS_Aluminium_7075*CP_Aluminium_7075, ALP= ALP_Propeller_sides_interiorofionsat  , EPS= EPS_Propeller_sides_interiorofionsat  ;
+  D      1700 = '/Propeller side right               ', T= 0.000, A= 2.880000E-02, C= 4.3200E-05*DENS_Aluminium_7075*CP_Aluminium_7075, ALP= ALP_Propeller_sides_interiorofionsat  , EPS= EPS_Propeller_sides_interiorofionsat  ;
+  D      1800 = '/Propeller top                      ', T= 0.000, A= 2.880000E-02, C= 4.3200E-05*DENS_Aluminium_7075*CP_Aluminium_7075, ALP= ALP_Propeller_sides_interiorofionsat  , EPS= EPS_Propeller_sides_interiorofionsat  ;
+  D      1900 = '/Propeller bottom                   ', T= 0.000, A= 0.000000E+00, C= 4.3200E-05*DENS_Aluminium_7075*CP_Aluminium_7075, ALP= 0.000, EPS= 0.000;
+  D      2000 = '/Propeller side back                ', T= 0.000, A= 1.843200E-02, C= 2.7648E-05*DENS_Aluminium_7075*CP_Aluminium_7075, ALP= ALP_Propeller_Front_Back_Side_ColdCase, EPS= EPS_Propeller_Front_Back_Side_ColdCase;
+  D      2100 = '/Band S front                       ', T= 0.000, A= 1.005310E-02, C= 1.5080E-05*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint                       , EPS= EPS_Black_Paint                       ;
+  D      2200 = '/Band S bottom                      ', T= 0.000, A= 1.005310E-02, C= 1.5080E-05*DENS_Aluminium_6061*CP_Aluminium_6061, ALP= ALP_Black_Paint                       , EPS= EPS_Black_Paint                       ;
+  D      2300 = '/Batteries                          ', T= 0.000, A= 2.640000E-03, ALP= ALP_Batteries_Plastic_coating         , EPS= EPS_Batteries_Plastic_coating         ;
+  D      2301 = '/Batteries                          ', T= 0.000, A= 2.640000E-03, ALP= ALP_Batteries_Plastic_coating         , EPS= EPS_Batteries_Plastic_coating         ;
+  D      2302 = '/Batteries                          ', T= 0.000, A= 5.154512E-03, ALP= ALP_Batteries_Plastic_coating         , EPS= EPS_Batteries_Plastic_coating         ;
+  D      2303 = '/Batteries                          ', T= 0.000, A= 5.154512E-03, ALP= ALP_Batteries_Plastic_coating         , EPS= EPS_Batteries_Plastic_coating         ;
+  D      2304 = '/Batteries                          ', T= 0.000, A= 1.757220E-03, ALP= ALP_Batteries_Plastic_coating         , EPS= EPS_Batteries_Plastic_coating         ;
+  D      2305 = '/Batteries                          ', T= 0.000, A= 1.757220E-03, ALP= ALP_Batteries_Plastic_coating         , EPS= EPS_Batteries_Plastic_coating         ;
+  D      2306 = '/Batteries                          ', T= 0.000, C= 1.5464E-04*DENS_Aluminium_6061*CP_Aluminium_6061, VOLUM = 1.546E-04;      # Volumic node
+  D      2400 = '/Batteries                          ', T= 0.000, A= 2.640000E-03, ALP= ALP_Batteries_Plastic_coating         , EPS= EPS_Batteries_Plastic_coating         ;
+  D      2401 = '/Batteries                          ', T= 0.000, A= 2.640000E-03, ALP= ALP_Batteries_Plastic_coating         , EPS= EPS_Batteries_Plastic_coating         ;
+  D      2402 = '/Batteries                          ', T= 0.000, A= 5.154512E-03, ALP= ALP_Batteries_Plastic_coating         , EPS= EPS_Batteries_Plastic_coating         ;
+  D      2403 = '/Batteries                          ', T= 0.000, A= 5.154512E-03, ALP= ALP_Batteries_Plastic_coating         , EPS= EPS_Batteries_Plastic_coating         ;
+  D      2404 = '/Batteries                          ', T= 0.000, A= 1.757220E-03, ALP= ALP_Batteries_Plastic_coating         , EPS= EPS_Batteries_Plastic_coating         ;
+  D      2405 = '/Batteries                          ', T= 0.000, A= 1.757220E-03, ALP= ALP_Batteries_Plastic_coating         , EPS= EPS_Batteries_Plastic_coating         ;
+  D      2406 = '/Batteries                          ', T= 0.000, C= 1.5464E-04*DENS_Aluminium_6061*CP_Aluminium_6061, VOLUM = 1.546E-04;      # Volumic node
+  D      2500 = '/Transponder                        ', T= 0.000, A= 1.376566E-02, C= 2.0648E-05*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_PCBZ                              , EPS= EPS_PCBZ                              ;
+  D      2600 = '/PowerCard 60                       ', T= 0.000, A= 1.376566E-02, C= 2.0648E-05*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_PCBZ                              , EPS= EPS_PCBZ                              ;
+  D      2700 = '/VHF_UHF: Transceiver               ', T= 0.000, A= 1.376566E-02, C= 2.0648E-05*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_PCBZ                              , EPS= EPS_PCBZ                              ;
+  D      2800 = '/ADCS CARD                          ', T= 0.000, A= 1.376566E-02, C= 2.0648E-05*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_PCBZ                              , EPS= EPS_PCBZ                              ;
+  D      2900 = '/OBC NinanoCard                     ', T= 0.000, A= 1.376566E-02, C= 2.0648E-05*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= ALP_PCBZ                              , EPS= EPS_PCBZ                              ;
+  D      3000 = '/Isolant MLI 1                      ', T= 0.000, A= 7.028880E-04, C= 3.5144E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= 1.000;
+  D      3001 = '/Isolant MLI 1                      ', T= 0.000, A= 3.600000E-04, C= 1.8000E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= 1.000;
+  D      3002 = '/Isolant MLI 1                      ', T= 0.000, A= 7.028880E-04, C= 3.5144E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= 1.000;
+  D      3003 = '/Isolant MLI 1                      ', T= 0.000, A= 3.600000E-04, C= 1.8000E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= 1.000;
+  D      3004 = '/Isolant MLI 1                      ', T= 0.000, A= 3.514440E-03, C= 1.7572E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= 1.000;
+  D      3005 = '/Isolant MLI 1                      ', T= 0.000, A= 3.514440E-03, C= 1.7572E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= 1.000;
+  D      3100 = '/Isolant MLI 1                      ', T= 0.000, A= 1.171480E-02, C= 5.8574E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3101 = '/Isolant MLI 1                      ', T= 0.000, A= 2.000000E-03, C= 1.0000E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3102 = '/Isolant MLI 1                      ', T= 0.000, A= 1.171480E-02, C= 5.8574E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3103 = '/Isolant MLI 1                      ', T= 0.000, A= 2.000000E-03, C= 1.0000E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3104 = '/Isolant MLI 1                      ', T= 0.000, A= 1.171480E-03, C= 5.8574E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3105 = '/Isolant MLI 1                      ', T= 0.000, A= 1.171480E-03, C= 5.8574E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3200 = '/Isolant MLI 1                      ', T= 0.000, A= 7.028880E-04, C= 3.5144E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3201 = '/Isolant MLI 1                      ', T= 0.000, A= 3.600000E-04, C= 1.8000E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3202 = '/Isolant MLI 1                      ', T= 0.000, A= 7.028880E-04, C= 3.5144E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3203 = '/Isolant MLI 1                      ', T= 0.000, A= 3.600000E-04, C= 1.8000E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3204 = '/Isolant MLI 1                      ', T= 0.000, A= 3.514440E-03, C= 1.7572E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3205 = '/Isolant MLI 1                      ', T= 0.000, A= 3.514440E-03, C= 1.7572E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3300 = '/Isolant MLI 2                      ', T= 0.000, A= 7.028880E-04, C= 3.5144E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= 1.000;
+  D      3301 = '/Isolant MLI 2                      ', T= 0.000, A= 3.600000E-04, C= 1.8000E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= 1.000;
+  D      3302 = '/Isolant MLI 2                      ', T= 0.000, A= 7.028880E-04, C= 3.5144E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= 1.000;
+  D      3303 = '/Isolant MLI 2                      ', T= 0.000, A= 3.600000E-04, C= 1.8000E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= 1.000;
+  D      3304 = '/Isolant MLI 2                      ', T= 0.000, A= 3.514440E-03, C= 1.7572E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= 1.000;
+  D      3305 = '/Isolant MLI 2                      ', T= 0.000, A= 3.514440E-03, C= 1.7572E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= 1.000;
+  D      3400 = '/Isolant MLI 2                      ', T= 0.000, A= 1.171480E-02, C= 5.8574E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3401 = '/Isolant MLI 2                      ', T= 0.000, A= 2.000000E-03, C= 1.0000E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3402 = '/Isolant MLI 2                      ', T= 0.000, A= 1.171480E-02, C= 5.8574E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3403 = '/Isolant MLI 2                      ', T= 0.000, A= 2.000000E-03, C= 1.0000E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3404 = '/Isolant MLI 2                      ', T= 0.000, A= 1.171480E-03, C= 5.8574E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3405 = '/Isolant MLI 2                      ', T= 0.000, A= 1.171480E-03, C= 5.8574E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3500 = '/Isolant MLI 2                      ', T= 0.000, A= 7.028880E-04, C= 3.5144E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3501 = '/Isolant MLI 2                      ', T= 0.000, A= 3.600000E-04, C= 1.8000E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3502 = '/Isolant MLI 2                      ', T= 0.000, A= 7.028880E-04, C= 3.5144E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3503 = '/Isolant MLI 2                      ', T= 0.000, A= 3.600000E-04, C= 1.8000E-07*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3504 = '/Isolant MLI 2                      ', T= 0.000, A= 3.514440E-03, C= 1.7572E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3505 = '/Isolant MLI 2                      ', T= 0.000, A= 3.514440E-03, C= 1.7572E-06*DENS_MLI           *CP_MLI           , ALP= 1.000, EPS= EPS_White_Paint                       ;
+  D      3600 = '/Ponts battery propeller            ', T= 0.000, A= 8.000000E-04, C= 4.0000E-07*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= 1.000, EPS= 1.000;
+  D      3601 = '/Ponts battery propeller            ', T= 0.000, A= 9.600000E-04, C= 4.8000E-07*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= 1.000, EPS= 1.000;
+  D      3602 = '/Ponts battery propeller            ', T= 0.000, A= 8.000000E-04, C= 4.0000E-07*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= 1.000, EPS= 1.000;
+  D      3603 = '/Ponts battery propeller            ', T= 0.000, A= 9.600000E-04, C= 4.8000E-07*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= 1.000, EPS= 1.000;
+  D      3604 = '/Ponts battery propeller            ', T= 0.000, A= 2.400000E-04, C= 1.2000E-07*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= 1.000, EPS= 1.000;
+  D      3605 = '/Ponts battery propeller            ', T= 0.000, A= 2.400000E-04, C= 1.2000E-07*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= 1.000, EPS= 1.000;
+  D      3700 = '/Ponts battery propeller            ', T= 0.000, A= 8.000000E-04, C= 4.0000E-07*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= 1.000, EPS= 1.000;
+  D      3701 = '/Ponts battery propeller            ', T= 0.000, A= 9.592000E-04, C= 4.7960E-07*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= 1.000, EPS= 1.000;
+  D      3702 = '/Ponts battery propeller            ', T= 0.000, A= 8.000000E-04, C= 4.0000E-07*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= 1.000, EPS= 1.000;
+  D      3703 = '/Ponts battery propeller            ', T= 0.000, A= 9.592000E-04, C= 4.7960E-07*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= 1.000, EPS= 1.000;
+  D      3704 = '/Ponts battery propeller            ', T= 0.000, A= 2.398000E-04, C= 1.1990E-07*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= 1.000, EPS= 1.000;
+  D      3705 = '/Ponts battery propeller            ', T= 0.000, A= 2.398000E-04, C= 1.1990E-07*DENS_Aluminium_2024*CP_Aluminium_2024, ALP= 1.000, EPS= 1.000;
+
+   # Sensor nodes
+
+   # Space (or environment) node
+  B  99999999 = 'Space Node', T= -269.000;
+
+
+
+
+$INITIAL
+
+      # Internal Dissipations :
+        # VHF/UHF: Transceiver
+        QI2700 = 0.72
+        # Battery dissipation
+        QI2306 = 2
+        QI2406 = 2
+        # Band S: Transponder dissipation
+        QI2500 = 1.65
+        # ADCS CARD
+        QI2800 = 1.8
+        # OBC NinanoCard
+        QI2900 = 2
+$VTIME
+
+      # Internal Dissipations :
+        # Propeller/ Thruster
+        QI1500 = INTRP1(TIMEM, Propeller__Thruster, 1) * A1500 / 2.0
+        QI1600 = INTRP1(TIMEM, Propeller__Thruster, 1) * A1600 / 2.0
+        QI1700 = INTRP1(TIMEM, Propeller__Thruster, 1) * A1700 / 2.0
+        QI1800 = INTRP1(TIMEM, Propeller__Thruster, 1) * A1800 / 2.0
+
+$CONTROLS
+   DATE50 = 2.739686E+04;
+   PERIOD = 4.344000E+04;
+
+
+$EVENTS
+
+   $TIMESTEP
+   $OUTPUT
+
+
+$ARRAYS
+   CHARACTER* SEQNAME(1) = 'Default';
+
+   REAL* SEQNB(2,*) =
+       0.000000E+00,  1;

@@ -2,23 +2,24 @@
 # @Author: Antoine Tavant
 # @Date:   2022-01-21 13:21:37
 # @Last Modified by:   Antoine Tavant
-# @Last Modified time: 2022-01-21 13:37:37
+# @Last Modified time: 2022-01-21 13:55:53
 # the main script, mainly to test and developp the package
 
 
 import numpy as np
 import matplotlib.pyplot as plt
+import pythermica
 from pythermica import  Thermica
 
 
 def main():
         
-    path = "./ionsat_deployed_ver3.1/ionsat_deployed_3.1_ionsat_deployed_3.1/"
-
+    path = pythermica.__path__[0]+"/../exemples/simulation_1/results_1/"
+    print(path)
     therm_results = Thermica(path)
 
     time_temperature = therm_results.return_time_temperature()
-    temperatures = therm_results.read_temperature( )
+    temperatures = therm_results.read_temperature_results()
 
     fg, axarr = plt.subplots(4,6, figsize=(8,3))
 

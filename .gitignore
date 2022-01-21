@@ -1,0 +1,5 @@
+pythermica.egg-info/*
+.eggs/*
+dist/*
+build/*
+pythermica/__pycache__/*

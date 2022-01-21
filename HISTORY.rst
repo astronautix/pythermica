@@ -6,3 +6,8 @@ History
 ------------------
 
 * First release on PyPI.
+
+0.2.0 (2022-01-21)
+------------------
+
+* Added network analyse
