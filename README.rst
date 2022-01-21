@@ -25,8 +25,10 @@ Post processing for Thermica simulation results
 
 Features
 --------
-
-* TODO
+Allows the automatic and deep analyses of Systema-Thermica results:
+* Analyse the nwk files to asses the Conductive and Radiative coupling coefficients
+* Analyse the simulation results, like Temperature, internal dissipation, flexes, etc.
+* Generate automaticaly the relevant figures
 
 Credits
 -------
