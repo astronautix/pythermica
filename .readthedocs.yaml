@@ -1,7 +1,7 @@
 # @Author: Antoine Tavant
 # @Date:   2022-01-24 14:44:39
 # @Last Modified by:   Antoine Tavant
-# @Last Modified time: 2022-01-24 14:50:31
+# @Last Modified time: 2022-01-24 14:57:17
 # .readthedocs.yaml
 # Read the Docs configuration file
 # See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
@@ -25,6 +25,6 @@ sphinx:
 
 
 # Optionally declare the Python requirements required to build your docs
-# python:
-#    install:
-#    - requirements: ./requirements-dev.txt
+python:
+   install:
+   - requirements: ./requirements_dev.txt ./requirements.txt
