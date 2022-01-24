@@ -13,8 +13,8 @@ pythermica
         :target: https://pythermica.readthedocs.io/en/latest/?version=latest
         :alt: Documentation Status
 
-.. image:: coverage.svg
-        :target: coverage.svg
+.. image:: https://raw.githubusercontent.com/astronautix/pythermica/main/coverage.svg
+        :target: https://raw.githubusercontent.com/astronautix/pythermica/main/coverage.svg
         :alt: Coverage percent
  
 
@@ -28,6 +28,7 @@ Post processing for Thermica simulation results
 Features
 --------
 Allows the automatic and deep analyses of Systema-Thermica results:
+
 * Analyse the nwk files to asses the Conductive and Radiative coupling coefficients
 * Analyse the simulation results, like Temperature, internal dissipation, flexes, etc.
 * Generate automaticaly the relevant figures
