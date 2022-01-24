@@ -3,3 +3,5 @@ pythermica.egg-info/*
 dist/*
 build/*
 pythermica/__pycache__/*
+tests/__pycache__/*
+.coverage

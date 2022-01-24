@@ -5,16 +5,18 @@ pythermica
 
 .. image:: https://img.shields.io/pypi/v/pythermica.svg
         :target: https://pypi.python.org/pypi/pythermica
-
-.. image:: https://img.shields.io/travis/antoinetavant/pythermica.svg
+.. 
+  .. image:: https://img.shields.io/travis/antoinetavant/pythermica.svg
         :target: https://travis-ci.com/antoinetavant/pythermica
 
 .. image:: https://readthedocs.org/projects/pythermica/badge/?version=latest
         :target: https://pythermica.readthedocs.io/en/latest/?version=latest
         :alt: Documentation Status
 
-
-
+.. image:: coverage.svg
+        :target: coverage.svg
+        :alt: Coverage percent
+ 
 
 Post processing for Thermica simulation results
 

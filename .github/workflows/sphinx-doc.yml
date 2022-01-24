@@ -1,10 +1,10 @@
 # @Author: Antoine Tavant
 # @Date:   2022-01-24 14:18:32
 # @Last Modified by:   Antoine Tavant
-# @Last Modified time: 2022-01-24 14:18:57
+# @Last Modified time: 2022-01-24 14:21:28
 # This is a basic workflow to help you get started with Actions
 
-name: Coverage badge
+name: Sphinx Doc
 
 # Controls when the workflow will run
 on:
@@ -32,27 +32,22 @@ jobs:
       - name: install deps
         run: pip install -r requirements.txt && pip install -r requirements_dev.txt 
       
-      - name: run converage
-        run: make coverage
+      - name: run docs
+        run: make docs
 
-      - name: Coverage Badge
-        run: |
-          coverage-badge -f -o coverage.svg
-        shell: bash
 
       - name: Verify Changed files
         uses: tj-actions/verify-changed-files@v6
         id: changed_files
-        with:
-          files: coverage.svg
+
 
       - name: Commit files
         if: steps.changed_files.outputs.files_changed == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add coverage.svg
-          git commit -m "Updated coverage.svg"
+          git add docs/*
+          git commit -m "Updated docs"
 
       - name: Push changes
         if: steps.changed_files.outputs.files_changed == 'true'
