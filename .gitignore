@@ -8,3 +8,4 @@ tests/__pycache__/*
 htmlcov
 .env
 .pytest_cache
+images

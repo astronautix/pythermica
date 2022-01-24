@@ -2,7 +2,7 @@
 # @Author: Antoine Tavant
 # @Date:   2021-12-09 19:11:50
 # @Last Modified by:   Antoine Tavant
-# @Last Modified time: 2022-01-21 15:33:36
+# @Last Modified time: 2022-01-24 16:02:11
 # the main script, mainly to test and develop the package
 
 from fileinput import filename
@@ -43,8 +43,8 @@ class Thermica():
             raise RuntimeWarning("Cannot process the nodes. Maybe the temperature file is not present.")
 
 
-    def get_filename(self, type="none"):
-        """general fonction to get the filename depending of the type of results wanted"""
+    def get_filenames(self, type="none", sort_by="name"):
+        """general fonction to get the filenames depending of the type of results wanted"""
         
         if type == "solarflux":
             extention = "*.sf.h5"
@@ -53,21 +53,30 @@ class Thermica():
         elif type == "temperature":
             extention = "*.temp.h5"
 
-        return list(self.path.glob(extention))
+        files =  list(self.path.glob(extention))
+        if sort_by == "date":
+            files.sort(key=os.path.getmtime)
+        else:
+            files.sort()
+
+        return files
  
  
     def get_solarflux_file(self):
         """return the h5 file name with the solar flux"""
  
-        filename = self.get_filename("solarflux")
+        filenames = self.get_filenames("solarflux")
         
         if self.verbose:
-            print(filename)
+            print(filenames)
             
-        if len(filename) != 1:
-            raise RuntimeError("Error with the Solaf Flux files")
+        if len(filenames) == 0:
+            raise RuntimeError("Error, missing Solaf Flux file")
+        elif len(filenames) > 1:
+            print("WARNING : Multiple files match the Solar Flux extention")
+
  
-        filename = filename[0]
+        filename = filenames[0]
  
         return filename
  
@@ -75,7 +84,7 @@ class Thermica():
     def get_temperature_file(self):
         """return the h5 file name with the temperature data"""
  
-        filenames = self.get_filename("temperature")
+        filenames = self.get_filenames("temperature")
         
         if len(filenames) == 0:
             raise RuntimeError("No temperature file found")
@@ -86,8 +95,6 @@ class Thermica():
             print("\n the temperature files are :")
             print(filenames)
             
-
- 
         filename = filenames[0]
         return filename
     

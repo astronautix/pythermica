@@ -47,7 +47,7 @@ plt.rcParams.update(plot_style)
 
 def figure_over_nodes(therm_results,
                       temperatures,
-                      time,
+                      times,
                       n_orbits,
                       path_list, case_names,
                       nodes_to_process = ["/Powercard P60", "/Printed Circuits",
@@ -61,13 +61,16 @@ def figure_over_nodes(therm_results,
     """
     
     n_path = len(path_list)
-    period = time[0][-1] / n_orbits
+    period = times[0][-1] / n_orbits
+    
+    nodes_processed = []
 
     for idx_node, node_label in enumerate(therm_results[0].names_unique):
         """looping over all the object names, hopping they are the same between the different cases"""
         
         if node_label in nodes_to_process:
             
+            nodes_processed.append(nodes_to_process)
             
             temperatures_node_average = []  # n_path lists of node-averaged temperature corresponding to n_path cases
             temperature_max = []  # maximum temperatures corresponding to n_path cases
@@ -102,28 +105,25 @@ def figure_over_nodes(therm_results,
                 
             
             
-                line, = plt.plot(time[idx_path], temperatures_node_average[idx_path],
+                line, = plt.plot(times[idx_path], temperatures_node_average[idx_path],
                          label=case_names[idx_path] + f" (max= {temperature_max[idx_path]:2.2f}, min=" +
                                f"{temperature_min[idx_path]:2.2f}, average=" +
                                f"{temperature_time_average[idx_path]:2.2f} over {len(index_nodes)} nodes)")
                 
                 for _temp in temperatures[idx_path].T[:, index_nodes].T:
-                    plt.plot(time[idx_path], _temp, color=line.get_color(), alpha=0.3)
+                    plt.plot(times[idx_path], _temp, color=line.get_color(), alpha=0.3)
                     
                 plt.hlines(temperature_time_average[idx_path],
-                           time[idx_path][0],
-                           time[idx_path][-1],
+                           times[idx_path][0],
+                           times[idx_path][-1],
                            colors=line.get_color())
                 
-                    
-            
             thermobject = therm_results[0]
             
             solarFlux, time_sf = thermobject.read_solarflux("Results", "Direct Solar", "Flux")
             solarFlux = solarFlux.mean(axis=0)
             solarFlux[solarFlux>0] =  max(temperature_max)
             solarFlux[solarFlux<=0] = min(temperature_min)
-           
             
             plt.fill_between(time_sf,
                              solarFlux,
@@ -149,6 +149,10 @@ def figure_over_nodes(therm_results,
             plt.savefig(p_img_root / figure_name)
             plt.close()
 
+        
+        for node in nodes_to_process:
+            if node not in nodes_processed:
+                print(f"WARNING ! the node {node} has not been processed")
 
 
 def totalInternalDissipation(therm_results,
@@ -157,7 +161,7 @@ def totalInternalDissipation(therm_results,
                       n_orbits,
                       path_list, case_names,
                       nodes_to_process = None ,
-                      path_root = "",
+                      path_root = "./",
                       filename_prefix="Total_IQ"):
     
     """
@@ -226,6 +230,13 @@ def totalInternalDissipation(therm_results,
     plt.ylabel("internal dissipations [W]")
     plt.legend(loc="upper center", bbox_to_anchor=(0.5, -0.15))
     
-    figure_name = filename_prefix + '.png'  # droping the first char which is "/"
-    plt.savefig(path_root+"images\\"+figure_name)
+    p_root = Path(path_root)
+    p_img_root = p_root / "images"
+    if not p_img_root.exists():
+        p_img_root.mkdir()
+
+    figure_name = filename_prefix + '.png'
+
+    plt.savefig(p_img_root / figure_name)
     plt.close()
+    
