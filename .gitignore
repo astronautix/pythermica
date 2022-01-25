@@ -9,3 +9,5 @@ htmlcov
 .env
 .pytest_cache
 images
+coverage.xml
+.vscode/settings.json

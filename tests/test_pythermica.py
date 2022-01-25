@@ -2,7 +2,7 @@
 # @Author: Antoine Tavant
 # @Date:   2022-01-21 13:21:38
 # @Last Modified by:   Antoine Tavant
-# @Last Modified time: 2022-01-24 16:04:32
+# @Last Modified time: 2022-01-25 09:41:05
 #!/usr/bin/env python
 
 """Tests for `pythermica` package."""
@@ -18,8 +18,9 @@ def test_Thermica():
     
     path = pythermica.__path__[0]+"/../exemples/simulation_1/results_1/"
 
-    therm_results = Thermica(path, verbose=False)
+    therm_results = Thermica(path, verbose=True)
     
+    therm_results.dump_result_file_structure()
     
     sf_filenames = therm_results.get_filenames("solarflux")
     assert sf_filenames[0].name == "ionsat_deployed_3.0.sf.h5"

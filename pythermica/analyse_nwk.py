@@ -2,7 +2,7 @@
 # @Author: Antoine Tavant
 # @Date:   2021-12-17 15:36:12
 # @Last Modified by:   Antoine Tavant
-# @Last Modified time: 2022-01-21 13:34:06
+# @Last Modified time: 2022-01-25 09:24:33
 
 import numpy as np
 import parse as prs
@@ -213,12 +213,17 @@ def generate_correlation_matrixes(list_mats,
         mat_values /= mat_values.max()
 
         if use_log:
-            mat_values_toplot = np.log10(mat_values)
+            mat_values_toplot = np.log10(mat_values+1e-5)
         else:
             mat_values_toplot = mat_values*10
-
+        
+        axarr[i].grid(False)
         neg = axarr[i].imshow( mat_values_toplot, cmap=cmap )
-        fig.colorbar(neg, ax=axarr[i], location='right', anchor=(0.5, 1.5), shrink=0.3, label="Coef Value")
+        fig.colorbar(neg, ax=axarr[i],
+                     location='right',
+                     anchor=(0.5, 1.5),
+                     shrink=0.3,
+                     label="Coef Value", )
 
         text_title = list_titles[i]
         if use_log:
@@ -326,6 +331,7 @@ def trans_dict_of_list_to_mat(dol, list_of_nodes_numbers):
 
 
     return mat_gb
+
 
 def get_all_dict_of_gb_lines(filename_gb, list_of_nodes_numbers, index_lines_with_new_node, lines_with_new_node):
     """open the file and read all the coefficients"""

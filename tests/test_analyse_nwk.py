@@ -2,7 +2,7 @@
 # @Author: Antoine Tavant
 # @Date:   2022-01-24 15:49:41
 # @Last Modified by:   Antoine Tavant
-# @Last Modified time: 2022-01-24 16:56:28
+# @Last Modified time: 2022-01-25 09:39:52
 import pytest
 
 import pythermica
@@ -64,7 +64,7 @@ def test_analyse_GL_nwk_data():
 
     list_of_nodes_numbers, list_of_nodes_names = extract_nodes(filename_nod)
 
-    mat_GL = analyse_GL_nwk_data(filename_gr,
+    mat_GL = analyse_GL_nwk_data(filename_gl,
                                  list_of_nodes_numbers,
                                  list_of_nodes_names)
 
@@ -89,4 +89,46 @@ def test_generate_correlation_matrixes():
                                             "mat_GR",
                                             )
     assert len(axarr) == 1
+
+
+def test_read_gb_file():
+    root = pythermica.__path__[0]+"/../exemples/model_test/"
+
+    filename_gb, filename_nod, filename_gr, filename_gl = get_useful_files(
+        root)
+
+    list_nodes_numbers_bg, index_lines_with_new_node, lines_with_new_node = read_gb_file(filename_gb)
     
+
+def test_get_nth_max_coupling():
+    
+    root = pythermica.__path__[0]+"/../exemples/model_test/"
+
+    filename_gb, filename_nod, filename_gr, filename_gl = get_useful_files(
+        root)
+    
+    list_of_nodes_numbers, list_of_nodes_names = extract_nodes(filename_nod)
+
+    mat_GR = analyse_GR_nwk_data(filename_gr,
+                                 list_of_nodes_numbers,
+                                 list_of_nodes_names)
+    
+    get_nth_max_coupling(mat_GR, list_of_nodes_names, 5)
+
+
+def test_get_all_dict_of_gb_lines():
+    root = pythermica.__path__[0]+"/../exemples/model_test/"
+
+    filename_gb, filename_nod, filename_gr, filename_gl = get_useful_files(
+        root)
+
+    list_of_nodes_numbers, list_of_nodes_names = extract_nodes(filename_nod)
+
+    list_nodes_numbers_bg, index_lines_with_new_node, lines_with_new_node = read_gb_file(
+        filename_gb)
+
+    mat_gb_vf, mat_gb_ir = get_all_dict_of_gb_lines(
+        filename_gb,
+        list_of_nodes_numbers,
+        index_lines_with_new_node,
+        lines_with_new_node)
