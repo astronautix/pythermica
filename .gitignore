@@ -11,3 +11,4 @@ htmlcov
 images
 coverage.xml
 .vscode/settings.json
+docs/_build/*

@@ -1,3 +1,8 @@
+# -*- coding: utf-8 -*-
+# @Author: Antoine Tavant
+# @Date:   2022-01-21 13:21:37
+# @Last Modified by:   Antoine Tavant
+# @Last Modified time: 2022-01-25 09:44:55
 #!/usr/bin/env python
 #
 # pythermica documentation build configuration file, created by
@@ -83,7 +88,7 @@ todo_include_todos = False
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = 'sphinx_rtd_theme'  # 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a
 # theme further.  For a list of options available for each theme, see the
