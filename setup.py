@@ -2,7 +2,7 @@
 # @Author: Antoine Tavant
 # @Date:   2022-01-21 13:21:38
 # @Last Modified by:   Antoine Tavant
-# @Last Modified time: 2022-01-25 09:52:36
+# @Last Modified time: 2022-01-26 15:20:18
 #!/usr/bin/env python
 
 """The setup script."""
@@ -48,6 +48,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/astronautix/pythermica',
-    version='0.2.1',
+    version='0.2.2',
     zip_safe=False,
 )

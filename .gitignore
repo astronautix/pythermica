@@ -12,3 +12,6 @@ images
 coverage.xml
 .vscode/settings.json
 docs/_build/*
+exemples/model_test/*.png
+exemples/simulation_1/*/*.png
+

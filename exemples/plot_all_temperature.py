@@ -2,7 +2,7 @@
 # @Author: Antoine Tavant
 # @Date:   2022-01-21 13:21:37
 # @Last Modified by:   Antoine Tavant
-# @Last Modified time: 2022-01-21 13:37:37
+# @Last Modified time: 2022-01-26 14:42:52
 # the main script, mainly to test and developp the package
 
 
@@ -13,12 +13,12 @@ from pythermica import  Thermica
 
 def main():
         
-    path = "./ionsat_deployed_ver3.1/ionsat_deployed_3.1_ionsat_deployed_3.1/"
+    path = "./simulation_1/results_1/"
 
     therm_results = Thermica(path)
 
     time_temperature = therm_results.return_time_temperature()
-    temperatures = therm_results.read_temperature( )
+    temperatures = therm_results.get_temperature( )
 
     fg, axarr = plt.subplots(4,6, figsize=(8,3))
 

@@ -2,7 +2,7 @@
 # @Author: Antoine Tavant
 # @Date:   2021-12-17 15:36:12
 # @Last Modified by:   Antoine Tavant
-# @Last Modified time: 2022-01-25 09:24:33
+# @Last Modified time: 2022-01-26 15:17:59
 
 import numpy as np
 import parse as prs
@@ -220,7 +220,7 @@ def generate_correlation_matrixes(list_mats,
         axarr[i].grid(False)
         neg = axarr[i].imshow( mat_values_toplot, cmap=cmap )
         fig.colorbar(neg, ax=axarr[i],
-                     location='right',
+                    #  location='right',
                      anchor=(0.5, 1.5),
                      shrink=0.3,
                      label="Coef Value", )

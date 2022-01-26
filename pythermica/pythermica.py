@@ -2,7 +2,7 @@
 # @Author: Antoine Tavant
 # @Date:   2021-12-09 19:11:50
 # @Last Modified by:   Antoine Tavant
-# @Last Modified time: 2022-01-24 16:02:11
+# @Last Modified time: 2022-01-26 14:31:06
 # the main script, mainly to test and develop the package
 
 from fileinput import filename
@@ -41,6 +41,9 @@ class Thermica():
             self.process_model_nodes()
         except:
             raise RuntimeWarning("Cannot process the nodes. Maybe the temperature file is not present.")
+        
+
+
 
 
     def get_filenames(self, type="none", sort_by="name"):
