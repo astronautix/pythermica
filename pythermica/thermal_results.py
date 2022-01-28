@@ -2,15 +2,14 @@
 # @Author: Antoine Tavant
 # @Date:   2021-12-09 19:11:50
 # @Last Modified by:   Antoine Tavant
-# @Last Modified time: 2022-01-26 14:31:06
+# @Last Modified time: 2022-01-27 18:16:27
 # the main script, mainly to test and develop the package
 
-from fileinput import filename
 import numpy as np
 import matplotlib.pyplot as plt
 import h5py as hp
 import os, sys, glob
-from pathlib import Path
+from pathlib import Path, PosixPath, WindowsPath
 
 #=============================================================================
 
@@ -20,7 +19,7 @@ class Thermica():
     def __init__(self, path, verbose=True):
         """Init the class"""
         
-        if type(path) is Path:
+        if type(path) in [PosixPath, WindowsPath] :
             self.path = path  #: path were the simulation results are stored
         elif type(path) is str:
             self.path = Path(path)  #: path were the simulation results are stored

@@ -10,9 +10,10 @@ import h5py as hp
 import os, sys, glob
 
 #=============================================================================
-from pythermica import Thermica
+from .thermal_results import Thermica
 from pathlib import Path
 
+from tqdm.auto import tqdm
 
 plot_style = {
     "axes.grid": True,
@@ -40,7 +41,8 @@ plot_style = {
     "xtick.top": True,
     "ytick.labelsize": 10,
     "ytick.minor.visible": True,
-    "ytick.right": True
+    "ytick.right": True,
+    "savefig.facecolor": "w"
 }
 
 plt.rcParams.update(plot_style)
@@ -54,7 +56,8 @@ def figure_over_nodes(therm_results,
                      "/Transponders (1)", "/Batteries"] ,
                       path_root = "./",
                       name_yaxis="Temperature",
-                      filename_prefix=""):
+                      filename_prefix="",
+                      progress_bar=True):
     
     """
     generate a bunch of figures to compare simulations
@@ -64,8 +67,18 @@ def figure_over_nodes(therm_results,
     period = times[0][-1] / n_orbits
     
     nodes_processed = []
-
-    for idx_node, node_label in enumerate(therm_results[0].names_unique):
+    
+        
+    for i, name in enumerate(nodes_to_process):
+        if name[0] != "/":
+            nodes_to_process[i] = "/"+name
+            
+    list_names_unique = therm_results[0].names_unique
+    
+    for idx_node, node_label in tqdm(enumerate(list_names_unique),
+                                            total=len(list_names_unique),
+                                            desc=name_yaxis,
+                                            disable=not progress_bar):
         """looping over all the object names, hopping they are the same between the different cases"""
         
         if node_label in nodes_to_process:
@@ -122,8 +135,10 @@ def figure_over_nodes(therm_results,
             
             solarFlux, time_sf = thermobject.read_solarflux("Results", "Direct Solar", "Flux")
             solarFlux = solarFlux.mean(axis=0)
-            solarFlux[solarFlux>0] =  max(temperature_max)
-            solarFlux[solarFlux<=0] = min(temperature_min)
+            mask_flux = solarFlux > 0
+            mask_no = solarFlux < 0
+            solarFlux[mask_flux] =  max(temperature_max)
+            solarFlux[mask_no] = min(temperature_min)
             
             plt.fill_between(time_sf,
                              solarFlux,
@@ -152,14 +167,15 @@ def figure_over_nodes(therm_results,
         
         for node in nodes_to_process:
             if node not in nodes_processed:
-                print(f"WARNING ! the node {node} has not been processed")
+                pass # print(f"WARNING ! the node {node} has not been processed")
 
 
 def totalInternalDissipation(therm_results,
                       internal_dissipations,
                       time,
                       n_orbits,
-                      path_list, case_names,
+                      path_list,
+                      case_names,
                       nodes_to_process = None ,
                       path_root = "./",
                       filename_prefix="Total_IQ"):
@@ -184,6 +200,9 @@ def totalInternalDissipation(therm_results,
         else :
             list_to_process = nodes_to_process
         
+        for i, name in enumerate(list_to_process):
+            if name[0] != "/":
+                list_to_process[i] = "/"+name
 
         for idx_node, node_label in enumerate(therm_results[idx_path].names_unique):
             """looping over all the object names, hopping they are the same between the different cases"""
@@ -220,15 +239,15 @@ def totalInternalDissipation(therm_results,
     
     titletext = "Total internal dissipation power"
     
-    if nodes_to_process is not None:
-        titletext += "\n"
-        for nodename in nodes_to_process:
-            titletext += nodename + ", "
+    # if nodes_to_process is not None:
+    #     titletext += "\n"
+    #     for nodename in nodes_to_process:
+    #         titletext += nodename + ", "
                 
     plt.title(titletext)    
     plt.xlabel('Time (hr)')
     plt.ylabel("internal dissipations [W]")
-    plt.legend(loc="upper center", bbox_to_anchor=(0.5, -0.15))
+    # plt.legend(loc="upper center", bbox_to_anchor=(0.5, -0.15))
     
     p_root = Path(path_root)
     p_img_root = p_root / "images"

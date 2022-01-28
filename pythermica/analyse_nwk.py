@@ -2,7 +2,8 @@
 # @Author: Antoine Tavant
 # @Date:   2021-12-17 15:36:12
 # @Last Modified by:   Antoine Tavant
-# @Last Modified time: 2022-01-26 15:17:59
+# @Last Modified time: 2022-01-27 19:15:57
+
 
 import numpy as np
 import parse as prs
@@ -100,8 +101,6 @@ def analyse_GR_nwk_data(filename_gr: str,
     for line in lines:
 
         if "GR( " in line:
-
-            
             format_string = "      GR( {n_org} , {n_dest} )	=	{data};\n"
             parsed = prs.parse(format_string, line)
             
@@ -118,11 +117,14 @@ def analyse_GR_nwk_data(filename_gr: str,
                 gr_value = eval( parsed["data"])
                 
                 if parsed["n_dest"]  not in ['99999999', "SCREEN", "FILTER"]:
-                    ind_dest = list_of_nodes_numbers.index(eval(parsed["n_dest"]))
-                    ind_org = list_of_nodes_numbers.index(eval(parsed["n_org"]))
+                    try :
+                        ind_dest = list_of_nodes_numbers.index(eval(parsed["n_dest"]))
+                        ind_org = list_of_nodes_numbers.index(eval(parsed["n_org"]))
 
-                    mat_GR[ind_dest, ind_org] = gr_value
-                    mat_GR[ind_org, ind_dest] = gr_value
+                        mat_GR[ind_dest, ind_org] = gr_value
+                        mat_GR[ind_org, ind_dest] = gr_value
+                    except ValueError:
+                        pass
             except TypeError:
                 print(line)
 
@@ -167,13 +169,16 @@ def analyse_GL_nwk_data(filename_gl, list_of_nodes_numbers, list_of_nodes_names)
 
 
             gl_value = eval( parsed["data"])
+            
+            try:
+                ind_dest = list_of_nodes_numbers.index(eval(parsed["n_dest"]))
+                ind_org = list_of_nodes_numbers.index(eval(parsed["n_org"]))
 
-            ind_dest = list_of_nodes_numbers.index(eval(parsed["n_dest"]))
-            ind_org = list_of_nodes_numbers.index(eval(parsed["n_org"]))
-
-            mat_GL[ind_dest, ind_org] = gl_value
-            mat_GL[ind_org, ind_dest] = gl_value
-    
+                mat_GL[ind_dest, ind_org] = gl_value
+                mat_GL[ind_org, ind_dest] = gl_value
+            except ValueError:
+                pass
+            
     return mat_GL
 
 def generate_correlation_matrixes(list_mats,
@@ -181,7 +186,7 @@ def generate_correlation_matrixes(list_mats,
                                   list_titles,
                                   use_log=True,
                                   save_fig=False,
-                                  filename="",
+                                  filename= Path("./corr_matrix.png"),
                                   cmap="afmhot_r"):
     """creat a Matrice figure of the node coefficients
 
@@ -191,7 +196,7 @@ def generate_correlation_matrixes(list_mats,
         list_titles (list): list of the subplot titles, coerrespondes to list_mats
         use_log (bool, optional): if `True`, then compute the log10 of the matrice before ploting . Defaults to True.
         save_fig (bool, optional): if `True`, then save the figure on a PNG file. Defaults to False.
-        filename (str, optional): name of the figure file, used if `save_fig`. Defaults to "".
+        filename (Path, optional): name of the figure file, used if `save_fig`. Defaults to "".
 
     Returns:
         fig, axarr [matplotlib.Figure and Axies]: the matplotlig objects
@@ -260,9 +265,10 @@ def generate_correlation_matrixes(list_mats,
 
     if save_fig:
         if use_log:
-            filename += "_log"
-
-        plt.savefig(filename+".png", dpi=200)
+            patent = filename.parent
+            name = filename.stem + "_log.png"
+            filename = Path(patent, name)
+        plt.savefig(filename, dpi=200)
     
     return fig, axarr
 

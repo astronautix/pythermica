@@ -2,11 +2,15 @@
 # @Author: Antoine Tavant
 # @Date:   2022-01-26 14:56:58
 # @Last Modified by:   Antoine Tavant
-# @Last Modified time: 2022-01-26 15:03:33
+# @Last Modified time: 2022-01-27 15:39:41
 
-from pythermica.post_process import process_nwk_and_temperature
 import pythermica
+from pythermica import process_nwk_and_temperature
 
-path = pythermica.__path__[0]+"/../exemples/model_test/"
+path = pythermica.__path__[0]+"/../exemples/simulation_1/results_1/"
 
-process_nwk_and_temperature(path)
+
+
+def test_process_nwk_and_temperature():
+    pass
+    # process_nwk_and_temperature(path)

@@ -33,6 +33,12 @@ Allows the automatic and deep analyses of Systema-Thermica results:
 * Analyse the simulation results, like Temperature, internal dissipation, flexes, etc.
 * Generate automaticaly the relevant figures
 
+
+Requirements
+------------
+For now, `python3.10` is not well supported by `matplotlib`
+
+
 Credits
 -------
 

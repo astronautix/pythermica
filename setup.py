@@ -2,7 +2,7 @@
 # @Author: Antoine Tavant
 # @Date:   2022-01-21 13:21:38
 # @Last Modified by:   Antoine Tavant
-# @Last Modified time: 2022-01-26 15:20:18
+# @Last Modified time: 2022-01-28 12:08:22
 #!/usr/bin/env python
 
 """The setup script."""
@@ -24,7 +24,7 @@ test_requirements = ['pytest>=3', ]
 setup(
     author="Antoine Tavant",
     author_email='antoine.tavant@lpp.polytechnique.fr',
-    python_requires='>=3.5',
+    python_requires='>=3.5, <3.10', 
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers',
@@ -48,6 +48,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/astronautix/pythermica',
-    version='0.2.2',
+    version='0.2.3',
     zip_safe=False,
 )
